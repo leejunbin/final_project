@@ -11,6 +11,8 @@
 		<mapper resource="test/app/mybatis/mapper/BoardMapper.xml"/>
 	</mappers>
 	
+	
+	
 -->
 
 
