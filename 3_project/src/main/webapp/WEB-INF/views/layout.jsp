@@ -17,6 +17,25 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/styles/responsive.css">
+
+<!-- ezone템플릿 css -->
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+		
+<!-- all css here -->
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/magnific-popup.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/animate.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/themify-icons.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/pe-icon-7-stroke.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/icofont.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/meanmenu.min.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/jquery-ui.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/bundle.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/style.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/responsive.css">
+<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 <div class="super_container">
@@ -38,4 +57,17 @@
 <script src="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="${pageContext.request.contextPath}/resources/plugins/easing/easing.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
+<!-- ezone 템플릿-->
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/vendor/jquery-1.12.0.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/popper.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/bootstrap.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/jquery.magnific-popup.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/isotope.pkgd.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/jquery.counterup.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/waypoints.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/ajax-mail.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/owl.carousel.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/plugins.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/main.js"></script>
 </html>
