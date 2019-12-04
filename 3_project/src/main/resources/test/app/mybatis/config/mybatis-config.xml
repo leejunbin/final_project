@@ -11,6 +11,12 @@
 		<mapper resource="test/app/mybatis/mapper/BoardMapper.xml"/>
 	</mappers>
 -->
+	<typeAliases>
+		<typeAlias type="test.app.project.vo.MembersVo" alias="members"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="test/app/mybatis/mapper/p/MembersMapper.xml"/>
+	</mappers>
 </configuration>  
   
   

@@ -18,7 +18,7 @@
 								<!-- Currency / Language / My Account -->
 
 								<li class="currency" style='background-color: red;border:none;'>
-									<a href="#" style='color:white;'>예약내역</a>
+									<a href="${pageContext.request.contextPath }/house/detail" style='color:white;'>예약내역</a>
 								</li>
 								<li class="language" style='background-color: red;border:none;'>
 									<a href="#" style='color:white;'>
@@ -33,9 +33,15 @@
 									</ul>
 								</li>
 								<li class="account" style='background-color: red;border:none;'>
-									<a href="#" style='color:white;'>
-										로그인
-									</a>
+									<c:choose>
+										<c:when test="${empty sessionScope.id }">
+											<a href="${pageContext.request.contextPath }/members/login" style='color:white;'>로그인</a>	
+										</c:when>
+										<c:otherwise>
+											<a href="${pageContext.request.contextPath }/members/logout" style='color:white;'>로그아웃</a>
+										</c:otherwise>
+									</c:choose>
+									
 								</li>
 							</ul>
 						</div>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="test.app.mybatis.mapper.p.MembersMapper">
+	
+	<!-- 회원가입 insert -->
+	<insert id="join" parameterType="members">
+		INSERT INTO members VALUES(#{mid},#{gnum},#{mpwd},#{mname},#{mphone},#{memail},#{maddr},sysdate,0)
+	</insert>
+
+
+	<!-- 로그인시 존재하는 회원인지 체크 -->
+	<select id="isMember" parameterType="members" resultType="members">
+		SELECT * FROM members WHERE mid=#{mid} AND mpwd=#{mpwd}
+	</select>
+	
+	<!-- 회원가입 아이디 중복검사 -->
+	<select id="idCheck" parameterType="String" resultType="members">
+		SELECT * FROM members WHERE mid=#{mid}
+	</select>
+</mapper>
