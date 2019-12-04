@@ -1,103 +1,218 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-	<div class="fs_menu_overlay"></div>
-	<div class="hamburger_menu">
-		<div class="hamburger_close"><i class="fa fa-times" aria-hidden="true"></i></div>
-		<div class="hamburger_menu_content text-right">
-			<ul class="menu_top_nav">
-				<li class="menu_item has-children">
-					<a href="#">
-						usd
-						<i class="fa fa-angle-down"></i>
-					</a>
-					<ul class="menu_selection">
-						<li><a href="#">cad</a></li>
-						<li><a href="#">aud</a></li>
-						<li><a href="#">eur</a></li>
-						<li><a href="#">gbp</a></li>
-					</ul>
-				</li>
-				<li class="menu_item has-children">
-					<a href="#">
-						English
-						<i class="fa fa-angle-down"></i>
-					</a>
-					<ul class="menu_selection">
-						<li><a href="#">French</a></li>
-						<li><a href="#">Italian</a></li>
-						<li><a href="#">German</a></li>
-						<li><a href="#">Spanish</a></li>
-					</ul>
-				</li>
-				<li class="menu_item has-children">
-					<a href="#">
-						My Account
-						<i class="fa fa-angle-down"></i>
-					</a>
-					<ul class="menu_selection">
-						<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
-						<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
-					</ul>
-				</li>
-				<li class="menu_item"><a href="#">home</a></li>
-				<li class="menu_item"><a href="#">shop</a></li>
-				<li class="menu_item"><a href="#">promotion</a></li>
-				<li class="menu_item"><a href="#">pages</a></li>
-				<li class="menu_item"><a href="#">blog</a></li>
-				<li class="menu_item"><a href="#">contact</a></li>
-			</ul>
-		</div>
+<div class="fs_menu_overlay"></div>
+<div class="hamburger_menu">
+	<div class="hamburger_close">
+		<i class="fa fa-times" aria-hidden="true"></i>
 	</div>
+	<div class="hamburger_menu_content text-right">
+		<ul class="menu_top_nav">
+			<li class="menu_item has-children"><a href="#"> usd <i
+					class="fa fa-angle-down"></i>
+			</a>
+				<ul class="menu_selection">
+					<li><a href="#">cad</a></li>
+					<li><a href="#">aud</a></li>
+					<li><a href="#">eur</a></li>
+					<li><a href="#">gbp</a></li>
+				</ul></li>
+			<li class="menu_item has-children"><a href="#"> English <i
+					class="fa fa-angle-down"></i>
+			</a>
+				<ul class="menu_selection">
+					<li><a href="#">French</a></li>
+					<li><a href="#">Italian</a></li>
+					<li><a href="#">German</a></li>
+					<li><a href="#">Spanish</a></li>
+				</ul></li>
+			<li class="menu_item has-children"><a href="#"> My Account <i
+					class="fa fa-angle-down"></i>
+			</a>
+				<ul class="menu_selection">
+					<li><a href="#"><i class="fa fa-sign-in"
+							aria-hidden="true"></i>Sign In</a></li>
+					<li><a href="#"><i class="fa fa-user-plus"
+							aria-hidden="true"></i>Register</a></li>
+				</ul></li>
+			<li class="menu_item"><a href="#">home</a></li>
+			<li class="menu_item"><a href="#">shop</a></li>
+			<li class="menu_item"><a href="#">promotion</a></li>
+			<li class="menu_item"><a href="#">pages</a></li>
+			<li class="menu_item"><a href="#">blog</a></li>
+			<li class="menu_item"><a href="#">contact</a></li>
+		</ul>
+	</div>
+</div>
 
-	<!-- Slider -->
+<!-- Slider -->
 
-	<div class="main_slider" style="background-image:url(${pageContext.request.contextPath }/resources/images/slider_1.jpg)">
-		<div class="container fill_height">
-			<div class="row align-items-center fill_height">
-				<div class="col">
-					<div class="main_slider_content">
-						<h6>Spring / Summer Collection 2017</h6>
-						<h1>Get up to 30% Off New Arrivals</h1>
-						<div class="red_button shop_now_button"><a href="#">shop now</a></div>
-					</div>
+<div class="main_slider"
+	style="background-image:url(${pageContext.request.contextPath }/resources/images/slider_1.jpg)">
+	<div class="container fill_height">
+		<div class="row align-items-center fill_height">
+			<div class="col">
+				<div class="main_slider_content">
+					<h6>Spring / Summer Collection 2017</h6>
+					<h1>Get up to 30% Off New Arrivals</h1>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
 
-	<!-- Banner -->
+<!-- Best Sellers -->
 
-	<div class="banner">
+	<div class="best_sellers">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<div class="banner_item align-items-center" style="background-image:url(${pageContext.request.contextPath }/resources/images/banner_1.jpg)">
-						<div class="banner_category">
-							<a href="categories.html">women's</a>
-						</div>
+				<div class="col text-center">
+					<div class="section_title new_arrivals_title">
+						<h2>Best Sellers</h2>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="banner_item align-items-center" style="background-image:url(${pageContext.request.contextPath }/resources/images/banner_2.jpg)">
-						<div class="banner_category">
-							<a href="categories.html">accessories's</a>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="product_slider_container" style="height:190px;">
+						<div class="owl-carousel owl-theme product_slider" style="height:190px;">
+
+							<!-- Slide 1 -->
+
+							<div class="owl-item product_slider_item" style="height:186px;">
+								<div class="product-item" style="height:180px;">
+									<div class="product discount" style="height:190px;">
+										<div class="product_image">
+											<img src="${pageContext.request.contextPath }/resources/images/product_1.png" alt="" style="height:180px;">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 2 -->
+
+							<div class="owl-item product_slider_item" style="height:186px;">
+								<div class="product-item women" style="height:180px;">
+									<div class="product" style="height:190px;">
+										<div class="product_image">
+											<img src="${pageContext.request.contextPath }/resources/images/product_2.png" alt="" style="height:180px;">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 3 -->
+
+							<div class="owl-item product_slider_item" style="height:186px;">
+								<div class="product-item women" style="height:180px;">
+									<div class="product" style="height:190px;">
+										<div class="product_image">
+											<img src="${pageContext.request.contextPath }/resources/images/product_3.png" alt="" style="height:180px;">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 4 -->
+
+							<div class="owl-item product_slider_item" style="height:186px;">
+								<div class="product-item accessories" style="height:180px;">
+									<div class="product">
+										<div class="product_image">
+											<img src="${pageContext.request.contextPath }/resources/images/product_4.png" alt="" style="height:180px;">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 5 -->
+
+							<div class="owl-item product_slider_item" style="height:186px;">
+								<div class="product-item women men">
+									<div class="product" style="height:190px;">
+										<div class="product_image">
+											<img src="${pageContext.request.contextPath }/resources/images/product_5.png" alt="" style="height:180px;">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 6 -->
+
+							<div class="owl-item product_slider_item" style="height:186px;">
+								<div class="product-item accessories" style="height:180px;">
+									<div class="product discount" style="height:190px;">
+										<div class="product_image">
+											<img src="${pageContext.request.contextPath }/resources/images/product_6.png" alt="" style="height:180px;">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 7 -->
+
+							<div class="owl-item product_slider_item" style="height:186px;">
+								<div class="product-item women" style="height:180px;">
+									<div class="product" style="height:190px;">
+										<div class="product_image">
+											<img src="${pageContext.request.contextPath }/resources/images/product_7.png" alt="" style="height:180px;">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 8 -->
+
+							<div class="owl-item product_slider_item" style="height:186px;">
+								<div class="product-item accessories" style="height:180px;">
+									<div class="product" style="height:190px;">
+										<div class="product_image">
+											<img src="${pageContext.request.contextPath }/resources/images/product_8.png" alt="" style="height:180px;">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 9 -->
+
+							<div class="owl-item product_slider_item" style="height:186px;">
+								<div class="product-item men" style="height:180px;">
+									<div class="product" style="height:190px;">
+										<div class="product_image">
+											<img src="${pageContext.request.contextPath }/resources/images/product_9.png" alt="" style="height:180px;">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Slide 10 -->
+
+							<div class="owl-item product_slider_item" style="height:186px;">
+								<div class="product-item men" style="height:180px;">
+									<div class="product" style="height:190px;">
+										<div class="product_image">
+											<img src="${pageContext.request.contextPath }/resources/images/product_10.png" alt="" style="height:180px;">
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="banner_item align-items-center" style="background-image:url(${pageContext.request.contextPath }/resources/images/banner_3.jpg)">
-						<div class="banner_category">
-							<a href="categories.html">men's</a>
+
+						<!-- Slider Navigation -->
+
+						<div class="product_slider_nav_left product_slider_nav d-flex align-items-center justify-content-center flex-column">
+							<i class="fa fa-chevron-left" aria-hidden="true"></i>
+						</div>
+						<div class="product_slider_nav_right product_slider_nav d-flex align-items-center justify-content-center flex-column">
+							<i class="fa fa-chevron-right" aria-hidden="true"></i>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<!-- New Arrivals -->
+<!-- New Arrivals -->
 
 	<div class="new_arrivals">
 		<div class="container">
@@ -211,3 +326,37 @@
 			</div>
 		</div>
 	</div>
+
+
+<!-- Banner -->
+
+<div class="banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="banner_item align-items-center"
+					style="background-image:url(${pageContext.request.contextPath }/resources/images/banner_1.jpg)">
+					<div class="banner_category">
+						<a href="categories.html">women's</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="banner_item align-items-center"
+					style="background-image:url(${pageContext.request.contextPath }/resources/images/banner_2.jpg)">
+					<div class="banner_category">
+						<a href="categories.html">accessories's</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="banner_item align-items-center"
+					style="background-image:url(${pageContext.request.contextPath }/resources/images/banner_3.jpg)">
+					<div class="banner_category">
+						<a href="categories.html">men's</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
