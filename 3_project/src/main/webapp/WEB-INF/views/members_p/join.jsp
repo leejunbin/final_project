@@ -205,7 +205,7 @@
     <form id="joinForm" action="${pageContext.request.contextPath }/members/join" autocomplete="off" method="post" novalidate="novalidate" onsubmit="return validation()">
         <input type="hidden" name="yeogi_token" value="0f614d316fc01f334a06ae92f426580b">
         <div class="fix_title">
-            <h1 class="page_head"><a href="https://www.goodchoice.kr/" title="여기어때">여기어때</a></h1>
+            <h1 class="page_head"><a href="${pageContext.request.contextPath }/" title="여기어때">여기어때</a></h1>
         </div>
 
         <div class="join">

@@ -1,5 +1,7 @@
 package test.app.project.daoimpl.p;
 
+import java.util.HashMap;
+
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -37,6 +39,12 @@ public class MembersDaoImpl implements MembersDao{
 		
 		return sqlSessionTemplate.selectOne(NAMESPACE+".idCheck",mid);
 		
+	}
+	
+	// 비밀번호 찾기 임시비밀번호 발송
+	@Override
+	public MembersVo findPwd(HashMap<String, String> map) {
+		return sqlSessionTemplate.selectOne(NAMESPACE+".findPwd", map);
 	}
 	
 }

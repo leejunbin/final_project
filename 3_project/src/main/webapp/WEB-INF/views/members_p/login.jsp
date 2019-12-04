@@ -54,6 +54,10 @@
     <title>로그인 | 여기어때</title>
     <link rel="stylesheet" href="https://www.goodchoice.kr/css/common.css?rand=1574413652">
     <link rel="canonical" href="https://www.goodchoice.kr/user/login">
+    
+    <!-- jquery추가 -->
+    <script type="text/javascript" src="${pageContext.request.contextPath }/resources/jquery/jquery-3.4.1.js"></script>
+    
 </head>
 <body>
 <div class="layer_fix layer_unfix pop_login pop_mem_reserve">
@@ -61,7 +65,7 @@
         <form id="loginForm" action="${pageContext.request.contextPath }/members/login" autocomplete="off" method="post" novalidate="novalidate">
             <input type="hidden" name="yeogi_token" value="c4c5ed781de43637abfb026919f86f9b">
             <div class="fix_title">
-                <strong class="logo"><a href="https://www.goodchoice.kr/">여기어때</a></strong>
+                <strong class="logo"><a href="${pageContext.request.contextPath }/">여기어때</a></strong>
             </div>
             <button type="button" id="kakao-login-btn" class="btn_start btn_kakao" data-device-type="W"><span><i class="icon-ic_login_kakaotalk"></i>카카오톡으로 로그인</span></button>
             <button type="button" id="facebook-login-btn" class="btn_start btn_fb"><span><i class="icon-icn_login_facebook"></i>Facebook으로 로그인</span></button>
@@ -78,7 +82,7 @@
             <div><span style="color:red;font-size:16px;">${msg }</span></div>
            		<button class="btn_link gra_left_right_red" type="submit"><span>로그인</span></button>
             <div class="link_half">
-            	<div><a href="https://www.goodchoice.kr/user/passwdResetStart"><span>비밀번호 재설정</span></a></div>
+            	<div><a href="javascript:findPwd()"><span>비밀번호 재설정</span></a></div>
             	<div><a href="${pageContext.request.contextPath }/members/join"><span>회원가입</span></a></div>
             </div>
             
@@ -97,4 +101,13 @@
     </section>
 </div>
 </body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+	});
+	function findPwd(){
+	
+		window.open("${pageContext.request.contextPath}/members/findPwd","popup test","width=400,height=400,left=400");
+	}
+</script>
 </html>

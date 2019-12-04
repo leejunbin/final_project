@@ -1,5 +1,7 @@
 package test.app.project.service.p;
 
+import java.util.HashMap;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +27,13 @@ public class MembersService {
 	public MembersVo idCheck(String mid){
 		
 		return membersDaoImpl.idCheck(mid);
+		
+	}
+	
+	// 임시비밀번호 발송
+	public MembersVo findPwd(HashMap<String, String> map){
+		
+		return membersDaoImpl.findPwd(map);
 		
 	}
 }

@@ -29,13 +29,18 @@ public class MemberLoginController {
 		MembersVo vo1 = membersService.isMember(vo);
 		
 		if(vo1 == null){
-			model.addAttribute("msg","¾ÆÀÌµğ È¤Àº ºñ¹Ğ¹øÈ£°¡ ¸ÂÁö ¾Ê½À´Ï´Ù.");
+			model.addAttribute("msg","ì•„ì´ë”” ë˜ëŠ” ë¹„ë°€ë²ˆí˜¸ê°€ í‹€ë ¸ìŠµë‹ˆë‹¤");
 			return "/members_p/login";
 		}else{
 			session.setAttribute("id", id);
 			return "redirect:/";
 		}
 		
+	}
+	
+	@RequestMapping(value="/members/findPwd")
+	public String findPwd(){
+		return "/members_p/findPwd";
 	}
 	
 }

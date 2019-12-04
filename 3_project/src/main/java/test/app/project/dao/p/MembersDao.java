@@ -1,5 +1,7 @@
 package test.app.project.dao.p;
 
+import java.util.HashMap;
+
 import test.app.project.vo.MembersVo;
 
 public interface MembersDao {
@@ -9,4 +11,6 @@ public interface MembersDao {
 	public int join(MembersVo vo);
 	
 	public MembersVo idCheck(String mid);
+	
+	public MembersVo findPwd(HashMap<String, String> map);
 }

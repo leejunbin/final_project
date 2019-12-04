@@ -19,4 +19,8 @@
 	<select id="idCheck" parameterType="String" resultType="members">
 		SELECT * FROM members WHERE mid=#{mid}
 	</select>
+	<!-- 임시비밀번호 발송 위해 존재하는 회원인지 체크 -->
+	<select id="findPwd" parameterType="hashmap" resultType="members">
+		SELECT * FROM members WHERE mid=#{mid} AND memail=#{memail}
+	</select>
 </mapper>
