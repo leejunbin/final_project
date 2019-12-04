@@ -31,7 +31,6 @@
 		<!-- @Controller 어노테이션을 갖는 클래스는 제외하기 -->
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
 	</context:component-scan>
-	
 </beans>
 
 

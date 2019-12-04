@@ -3,22 +3,9 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-<!--
-	<typeAliases>
-		<typeAlias type="test.app.spring11.vo.BoardVo" alias="board"/>
-	</typeAliases>
 	<mappers>
-		<mapper resource="test/app/mybatis/mapper/BoardMapper.xml"/>
+		<mapper resource="test/app/mybatis/mapperY/AdminMapper.xml"/>
 	</mappers>
-	
-	
-	
--->
-
-
-
-
-
 
 </configuration>  
   
