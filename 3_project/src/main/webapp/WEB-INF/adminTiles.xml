@@ -5,6 +5,9 @@
 	<definition name=".admin" template="/WEB-INF/views/admin_view/layout.jsp">
 		<put-attribute name="main" value="/WEB-INF/views/admin_view/main.jsp"/>
 	</definition>
+	<definition name=".*" extends=".admin">
+		<put-attribute name="main" value="/WEB-INF/views/admin_view/{1}.jsp"/>
+	</definition>
 </tiles-definitions>
 
 

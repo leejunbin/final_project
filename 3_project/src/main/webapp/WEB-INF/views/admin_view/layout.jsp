@@ -18,6 +18,7 @@
 
 <!-- Custom styles for this template-->
 <link href="${cp}/resources/admin/css/sb-admin-2.min.css" rel="stylesheet">
+<link href="${cp}/resources/admin/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 <script type="text/javascript" src="${cp}/resources/admin/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
 $(function(){
@@ -152,9 +153,9 @@ $(function(){
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="${cp}/admin_view/table">
           <i class="fas fa-fw fa-table"></i>
-          <span>Tables</span></a>
+          <span>업체목록</span></a>
       </li>
 
       <!-- Divider -->
@@ -183,11 +184,13 @@ $(function(){
 
   <!-- Page level plugins -->
   <script src="${cp}/resources/admin/vendor/chart.js/Chart.min.js"></script>
+  <script src="${cp}/resources/admin/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="${cp}/resources/admin/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
   <!-- Page level custom scripts -->
   <script src="${cp}/resources/admin/js/demo/chart-area-demo.js"></script>
   <script src="${cp}/resources/admin/js/demo/chart-pie-demo.js"></script>
-
+  <script src="${cp}/resources/admin/js/demo/datatables-demo.js"></script>
 </body>
 </html>
 
