@@ -1,0 +1,67 @@
+     <!-- 숙박 가능 업소 리스트 -->
+                                    <div id="grid-sidebar12" class="tab-pane fade active show">
+                                        <div class="row">
+                                            <div class="col-md-12 col-xl-6">
+                                                <div class="product-wrapper mb-30 single-product-list product-list-right-pr mb-60">
+                                                    <div class="product-img list-img-width">
+                                                        <a href="#">
+                                                            <img src="assets/img/product/fashion-colorful/1.jpg" alt="">
+                                                        </a>
+                                                        <span>hot</span>
+                                                        <div class="product-action-list-style">
+                                                            <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                                <i class="pe-7s-look"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-list">
+                                                        <div class="product-list-info">
+                                                            <h4><a href="#">Homme Tapered Smart</a></h4>
+                                                            <span>$150.00</span>
+                                                            <p>Lorem ipsum dolor sit amet, mana consectetur adipisicing elit, sed do eiusmod tempor labore. </p>
+                                                        </div>
+                                                        <div class="product-list-cart-wishlist">
+                                                            <div class="product-list-cart">
+                                                                <a class="btn-hover list-btn-style" href="#">add to cart</a>
+                                                            </div>
+                                                            <div class="product-list-wishlist">
+                                                                <a class="btn-hover list-btn-wishlist" href="#">
+                                                                    <i class="pe-7s-like"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 col-xl-6">
+                                                <div class="product-wrapper mb-30 single-product-list product-list-right-pr mb-60">
+                                                    <div class="product-img list-img-width">
+                                                        <a href="#">
+                                                            <img src="assets/img/product/fashion-colorful/2.jpg" alt="">
+                                                        </a>
+                                                        <div class="product-action-list-style">
+                                                            <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
+                                                                <i class="pe-7s-look"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-content-list">
+                                                        <div class="product-list-info">
+                                                            <h4><a href="#">Skinny Jeans Terry</a></h4>
+                                                            <span>$180.00</span>
+                                                            <p>Lorem ipsum dolor sit amet, mana consectetur adipisicing elit, sed do eiusmod tempor labore. </p>
+                                                        </div>
+                                                        <div class="product-list-cart-wishlist">
+                                                            <div class="product-list-cart">
+                                                                <a class="btn-hover list-btn-style" href="#">add to cart</a>
+                                                            </div>
+                                                            <div class="product-list-wishlist">
+                                                                <a class="btn-hover list-btn-wishlist" href="#">
+                                                                    <i class="pe-7s-like"></i>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+											  <!-- 숙박 가능 업소 리스트 끝 -->

@@ -10,5 +10,8 @@ public class HomeController {
 	public String home() {
 		return ".main";
 	}
-	
+	@RequestMapping(value="/product/accommodationList")
+	public String accomlist(){
+		return ".product.accommodationList";
+	}
 }

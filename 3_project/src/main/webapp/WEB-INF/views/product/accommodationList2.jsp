@@ -1,32 +1,40 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
  <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath }/date/theme/css/t-datepicker.min.css" rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath }/date/theme/css/themes/t-datepicker-blue.css" rel="stylesheet" type="text/css">
 
-		<div class="breadcrumb-area pt-205 breadcrumb-padding pb-210" style="background-image: url(assets/img/bg/breadcrumb.jpg)">
-            <div class="container-fluid">
                 <div class="breadcrumb-content text-center">
-                    <h2>shop list 2 column</h2>
-                    <ul>
-                        <li><a href="#">home</a></li>
-                        <li>shop list 2 column</li>
-                    </ul>
+                    <h2>shop list 2 column111111</h2>
                 </div>
-            </div>
-        </div>
-        <div class="shop-page-wrapper shop-page-padding ptb-100">
-            <div class="container-fluid">
+
+        <div class="shop-page-wrapper shop-page-padding ptb-100 ">
+            <div class="container-fluid border-secondary">
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="shop-sidebar mr-50">
                             <div class="sidebar-widget mb-50">
-                                <h3 class="sidebar-title">Search Products</h3>
+                                <h3 class="sidebar-title">날짜</h3>
                                 <div class="sidebar-search">
-                                    <form action="#">
-                                        <input placeholder="Search Products..." type="text">
-                                        <button><i class="ti-search"></i></button>
-                                    </form>
+                                    <div class="t-datepicker">
+									  <div class="t-check-in"></div>
+									  <div class="t-check-out"></div>
+									</div>
+
                                 </div>
                             </div>
+                            
+                            <div class="sidebar-widget mb-60">
+                                <h3 class="sidebar-title">상세조건</h3>
+                           		    <button type="button" class="btn btn-outline-primary rounded"  style="width: 90px; height:40px;">초기화</button>&nbsp &nbsp 
+									<button type="button" class="btn btn-danger rounded" style="width: 90px; height:40px;">적용</button><br><br>
+										<input type="checkbox" style="width:20px; height:20px;">
+	  									<label class="custom-control-label" for="customCheck1" >예약 가능</label><br>
+	  									<input type="checkbox" style="width:20px; height:20px;">
+	  									<label class="custom-control-label" for="customCheck1">프로모션</label>
+                            </div>
+
                             <div class="sidebar-widget mb-40">
                                 <h3 class="sidebar-title">Filter by Price</h3>
                                 <div class="price_filter">
@@ -296,6 +304,7 @@
                                            </div>
                                         </div>
                                     </div>
+                                    <!-- 숙박 가능 업소 리스트 -->
                                     <div id="grid-sidebar12" class="tab-pane fade active show">
                                         <div class="row">
                                             <div class="col-md-12 col-xl-6">
@@ -361,132 +370,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-12 col-xl-6">
-                                                <div class="product-wrapper mb-30 single-product-list product-list-right-pr mb-60">
-                                                    <div class="product-img list-img-width">
-                                                        <a href="#">
-                                                            <img src="assets/img/product/fashion-colorful/3.jpg" alt="">
-                                                        </a>
-                                                        <div class="product-action-list-style">
-                                                            <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
-                                                                <i class="pe-7s-look"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-list">
-                                                        <div class="product-list-info">
-                                                            <h4><a href="#">Navy Bird Print</a></h4>
-                                                            <span>$130.00</span>
-                                                            <p>Lorem ipsum dolor sit amet, mana consectetur adipisicing elit, sed do eiusmod tempor labore. </p>
-                                                        </div>
-                                                        <div class="product-list-cart-wishlist">
-                                                            <div class="product-list-cart">
-                                                                <a class="btn-hover list-btn-style" href="#">add to cart</a>
-                                                            </div>
-                                                            <div class="product-list-wishlist">
-                                                                <a class="btn-hover list-btn-wishlist" href="#">
-                                                                    <i class="pe-7s-like"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 col-xl-6">
-                                                <div class="product-wrapper mb-30 single-product-list product-list-right-pr mb-60">
-                                                    <div class="product-img list-img-width">
-                                                        <a href="#">
-                                                            <img src="assets/img/product/fashion-colorful/4.jpg" alt="">
-                                                        </a>
-                                                        <span>new</span>
-                                                        <div class="product-action-list-style">
-                                                            <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
-                                                                <i class="pe-7s-look"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-list">
-                                                        <div class="product-list-info">
-                                                            <h4><a href="#">Leg Smart Trousers </a></h4>
-                                                            <span>$120.00</span>
-                                                            <p>Lorem ipsum dolor sit amet, mana consectetur adipisicing elit, sed do eiusmod tempor labore. </p>
-                                                        </div>
-                                                        <div class="product-list-cart-wishlist">
-                                                            <div class="product-list-cart">
-                                                                <a class="btn-hover list-btn-style" href="#">add to cart</a>
-                                                            </div>
-                                                            <div class="product-list-wishlist">
-                                                                <a class="btn-hover list-btn-wishlist" href="#">
-                                                                    <i class="pe-7s-like"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 col-xl-6">
-                                                <div class="product-wrapper mb-30 single-product-list product-list-right-pr mb-60">
-                                                    <div class="product-img list-img-width">
-                                                        <a href="#">
-                                                            <img src="assets/img/product/fashion-colorful/5.jpg" alt="">
-                                                        </a>
-                                                        <span>hot</span>
-                                                        <div class="product-action-list-style">
-                                                            <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
-                                                                <i class="pe-7s-look"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-list">
-                                                        <div class="product-list-info">
-                                                            <h4><a href="#">Black Faux Suede</a></h4>
-                                                            <span>$170.00</span>
-                                                            <p>Lorem ipsum dolor sit amet, mana consectetur adipisicing elit, sed do eiusmod tempor labore. </p>
-                                                        </div>
-                                                        <div class="product-list-cart-wishlist">
-                                                            <div class="product-list-cart">
-                                                                <a class="btn-hover list-btn-style" href="#">add to cart</a>
-                                                            </div>
-                                                            <div class="product-list-wishlist">
-                                                                <a class="btn-hover list-btn-wishlist" href="#">
-                                                                    <i class="pe-7s-like"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12 col-xl-6">
-                                                <div class="product-wrapper mb-30 single-product-list product-list-right-pr mb-60">
-                                                    <div class="product-img list-img-width">
-                                                        <a href="#">
-                                                            <img src="assets/img/product/fashion-colorful/1.jpg" alt="">
-                                                        </a>
-                                                        <div class="product-action-list-style">
-                                                            <a class="animate-right" title="Quick View" data-toggle="modal" data-target="#exampleModal" href="#">
-                                                                <i class="pe-7s-look"></i>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-content-list">
-                                                        <div class="product-list-info">
-                                                            <h4><a href="#">Homme Tapered Smart </a></h4>
-                                                            <span>$190.00</span>
-                                                            <p>Lorem ipsum dolor sit amet, mana consectetur adipisicing elit, sed do eiusmod tempor labore. </p>
-                                                        </div>
-                                                        <div class="product-list-cart-wishlist">
-                                                            <div class="product-list-cart">
-                                                                <a class="btn-hover list-btn-style" href="#">add to cart</a>
-                                                            </div>
-                                                            <div class="product-list-wishlist">
-                                                                <a class="btn-hover list-btn-wishlist" href="#">
-                                                                    <i class="pe-7s-like"></i>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+											  <!-- 숙박 가능 업소 리스트 끝 -->
                                         </div>
                                     </div>
                                 </div>
@@ -506,4 +390,27 @@
                 </div>
             </div>
         </div>
-	
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+<script src="${pageContext.request.contextPath }/date/theme/js/t-datepicker.min.js"></script>
+<script>
+ $(document).ready(function(){
+    // Call global the function
+    $('.t-datepicker').tDatePicker({
+      // options here
+    });
+  });
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>

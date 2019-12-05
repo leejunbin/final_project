@@ -10,6 +10,15 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Colo Shop Template">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
+        crossorigin="anonymous"></script>
+<script src="${pageContext.request.contextPath }/resources/date/theme/js/t-datepicker.min.js"></script>
+<link href="${pageContext.request.contextPath }/resources/date/theme/css/t-datepicker.min.css" rel="stylesheet" type="text/css">
+<link href="${pageContext.request.contextPath }/resources/date/theme/css/themes/t-datepicker-bluegrey.css" rel="stylesheet" type="text/css"><!-- 색변경 -->
+
+
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/styles/bootstrap4/bootstrap.min.css">
 <link href="${pageContext.request.contextPath}/resources/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -35,7 +44,7 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/bundle.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/style.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/responsive.css">
-<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
 <div class="super_container">
@@ -50,6 +59,8 @@
 	</div>
 </div>
 </body>
+
+
 <script src="${pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/styles/bootstrap4/popper.js"></script>
 <script src="${pageContext.request.contextPath}/resources/styles/bootstrap4/bootstrap.min.js"></script>
