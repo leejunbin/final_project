@@ -6,16 +6,15 @@
 	
 	<!-- 회원가입 insert -->
 	<insert id="join" parameterType="members">
-		INSERT INTO members VALUES(#{mid},#{gnum},#{mpwd},#{mname},#{mphone},#{memail},#{maddr},sysdate,0)
+		INSERT INTO members VALUES(#{mid},#{gnum},#{mpwd},#{mname},#{mphone},#{memail},sysdate,0)
 	</insert>
-
 
 	<!-- 로그인시 존재하는 회원인지 체크 -->
 	<select id="isMember" parameterType="members" resultType="members">
 		SELECT * FROM members WHERE mid=#{mid} AND mpwd=#{mpwd}
 	</select>
 	
-	<!-- 회원가입 아이디 중복검사 -->
+	<!-- 회원가입 아이디 중복검사 / 해당 아이디 회원 있는지 조회-->
 	<select id="idCheck" parameterType="String" resultType="members">
 		SELECT * FROM members WHERE mid=#{mid}
 	</select>
@@ -27,5 +26,26 @@
 	<!-- 임시비밀번호로 비밀번호 변경 -->
 	<update id="changePwd" parameterType="members">
 		UPDATE members SET mpwd=#{mpwd} WHERE mid=#{mid}
+	</update>
+	
+	<!-- 마이페이지 회원정보 담아가기 -->
+	<select id="myinfo" parameterType="String" resultType="hashmap">
+		SELECT m.mid,m.mname,m.mpwd,m.mphone,m.memail,SUBSTR(m.mregdate,1,10) mregdate,m.mpoint,g.gname
+		FROM members m,grade g
+		WHERE m.gnum = g.gnum AND m.mid=#{mid}
+	</select>
+	
+	<!-- 회원의 쿠폰 갯수 얻어오기 -->
+	<select id="cntCoupon" parameterType="String" resultType="int">
+		SELECT NVL(COUNT(*),0)
+		FROM coupon
+		WHERE mid=#{mid}
+	</select>
+	
+	<!-- 회원정보 수정하기 -->
+	<update id="myinfoupdate" parameterType="members">
+		UPDATE members
+		SET mpwd=#{mpwd},memail=#{memail},mphone=#{mphone}
+		WHERE mid=#{mid}
 	</update>
 </mapper>

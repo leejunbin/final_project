@@ -141,12 +141,7 @@
     			$("#phone").focus();
     			return false;
     		}
-    		
-    		if($("#addr").val() == ""){
-    			alert("주소를 입력해주세요");
-    			$("#addr").focus();
-    			return false;
-    		}
+
     		
 			/*
     		// 이름 유효성 검사
@@ -242,11 +237,7 @@
 			<div class="inp_type_2 form-errors"><!-- focus / err -->
                 <input id="phone" type="text" name="phone" placeholder="연락처를 입력해주세요." style='height:22px;' required="" class="required" value="" data-rule-validemail="true" data-msg-required="연락처를 확인해 주세요.">
             </div>
-								
-			<b>주소</b>
-			<div class="inp_type_2 form-errors"><!-- focus / err -->
-                <input id="addr" type="text" name="addr" placeholder="주소를 입력해주세요." style='height:22px;' required="" class="required" value="" data-rule-validemail="true" data-msg-required="주소를 확인해 주세요.">
-            </div>
+
 			
 			<!-- 
             <b>닉네임</b>

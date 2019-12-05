@@ -27,8 +27,7 @@ public class MembersVo {
 	/** 이메일. */
 	private String memail;
 
-	/** 주소. */
-	private String maddr;
+
 
 	/** 가입일. */
 	private java.sql.Date mregdate;
@@ -43,7 +42,7 @@ public class MembersVo {
 
 	}
 
-	public MembersVo(String mid, int gnum, String mpwd, String mname, String mphone, String memail, String maddr,
+	public MembersVo(String mid, int gnum, String mpwd, String mname, String mphone, String memail,
 			java.sql.Date mregdate, int mpoint) {
 		super();
 		this.mid = mid;
@@ -52,7 +51,6 @@ public class MembersVo {
 		this.mname = mname;
 		this.mphone = mphone;
 		this.memail = memail;
-		this.maddr = maddr;
 		this.mregdate = mregdate;
 		this.mpoint = mpoint;
 	}
@@ -103,14 +101,6 @@ public class MembersVo {
 
 	public void setMemail(String memail) {
 		this.memail = memail;
-	}
-
-	public String getMaddr() {
-		return maddr;
-	}
-
-	public void setMaddr(String maddr) {
-		this.maddr = maddr;
 	}
 
 	public java.sql.Date getMregdate() {

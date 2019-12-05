@@ -23,16 +23,15 @@ public class MembersJoinController {
 		
 	}
 	@RequestMapping(value="/members/join",method=RequestMethod.POST)
-	public String join(String name,String id, String pwd1, String email, String phone, String addr){
+	public String join(String name,String id, String pwd1, String email, String phone){
 		
 		System.out.println("name:"+name);
 		System.out.println("id:"+id);
 		System.out.println("pwd:"+pwd1);
 		System.out.println("email:"+email);
 		System.out.println("phone:"+phone);
-		System.out.println("addr:"+addr);
 		
-		MembersVo vo = new MembersVo(id, 1, pwd1, name, phone, email, addr, null, 0);
+		MembersVo vo = new MembersVo(id, 1, pwd1, name, phone, email, null, 0);
 		
 		int n = membersService.join(vo);
 		

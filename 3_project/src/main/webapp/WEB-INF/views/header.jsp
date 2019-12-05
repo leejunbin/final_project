@@ -23,7 +23,7 @@
 								<li class="language" style='background-color: red;border:none;'>
 									<a href="#" style='color:white;'>
 										더보기
-										<i class="fa fa-angle-down"></i>
+										<i class="fa fa-angle-down" style="margin-top: 19px;"></i>
 									</a>
 									<ul class="language_selection">
 										<li><a href="#">공지사항</a></li>
@@ -57,12 +57,19 @@
 				<div class="row">
 					<div class="col-lg-12 text-right">
 						<div class="logo_container">
-							<a href="#">요기<span>어때</span></a>
+							<a href="${pageContext.request.contextPath }/">요기<span>어때</span></a>
 						</div>
 						<nav class="navbar">
 							<ul class="navbar_user">
 								<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+								<c:choose>
+									<c:when test="${empty sessionScope.id }">
+										<li><a href="${pageContext.request.contextPath }/members/login"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+									</c:when>
+									<c:otherwise>
+										<li><a href="${pageContext.request.contextPath }/members/mypage"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+									</c:otherwise>
+								</c:choose>
 								<li class="checkout">
 									<a href="#">
 										<i class="fa fa-shopping-cart" aria-hidden="true"></i>

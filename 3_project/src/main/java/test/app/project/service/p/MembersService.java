@@ -41,4 +41,21 @@ public class MembersService {
 	public int changePwd(MembersVo vo){
 		return membersDaoImpl.changePwd(vo);
 	}
+	
+	// 마이페이지에 담고갈 회원정보
+	public HashMap<String, Object> myinfo(String mid){
+		
+		return membersDaoImpl.myinfo(mid);
+		
+	}
+	
+	// 회원의 쿠폰 갯수 구하기
+	public int cntCoupon(String mid){
+		return membersDaoImpl.cntCoupon(mid);
+	}
+	
+	// 회원 정보 수정
+	public int myinfoupdate(MembersVo vo){
+		return membersDaoImpl.myinfoupdate(vo);
+	}
 }

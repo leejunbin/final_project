@@ -15,4 +15,11 @@ public interface MembersDao {
 	public MembersVo findPwd(HashMap<String, String> map);
 	
 	public int changePwd(MembersVo vo);
+	
+	public HashMap<String, Object> myinfo(String mid);
+	
+	public int cntCoupon(String mid);
+	
+	public int myinfoupdate(MembersVo vo);
+	
 }
