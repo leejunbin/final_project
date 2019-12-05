@@ -3,6 +3,8 @@ package test.app.project.dao.p;
 import java.util.HashMap;
 
 import test.app.project.vo.MembersVo;
+import test.app.project.vo.QnaCategoryVo;
+import test.app.project.vo.QnaboardVo;
 
 public interface MembersDao {
 	
@@ -15,4 +17,13 @@ public interface MembersDao {
 	public MembersVo findPwd(HashMap<String, String> map);
 	
 	public int changePwd(MembersVo vo);
+	
+	public HashMap<String, Object> myinfo(String mid);
+	
+	public int cntCoupon(String mid);
+	
+	public int myinfoupdate(MembersVo vo);
+	
+	public int qnainsert(QnaboardVo vo);
+	
 }

@@ -11,7 +11,7 @@ public class EventVo{
 
 
 	/** 이벤트식별키. */
-	private int eventNum;
+	private int event_Num;
 
 	/** 이벤트제목. */
 	private String etitle;
@@ -37,9 +37,9 @@ public class EventVo{
 	}
 
 
-	public EventVo(int eventNum, String etitle, java.sql.Date eregdate, int ehit, java.sql.Date estartday, java.sql.Date eenddate) {
+	public EventVo(int event_Num, String etitle, java.sql.Date eregdate, int ehit, java.sql.Date estartday, java.sql.Date eenddate) {
 		super();
-		this.eventNum = eventNum;
+		this.event_Num = event_Num;
 		this.etitle = etitle;
 		this.eregdate = eregdate;
 		this.ehit = ehit;
@@ -49,12 +49,12 @@ public class EventVo{
 
 
 	public int getEventNum() {
-		return eventNum;
+		return event_Num;
 	}
 
 
-	public void setEventNum(int eventNum) {
-		this.eventNum = eventNum;
+	public void setEventNum(int event_Num) {
+		this.event_Num = event_Num;
 	}
 
 

@@ -1,17 +1,14 @@
-
-
-/* Drop Tables */
-
 DROP TABLE administrator CASCADE CONSTRAINTS;
 DROP TABLE houseintro CASCADE CONSTRAINTS;
 DROP TABLE amenities CASCADE CONSTRAINTS;
-DROP TABLE paytable CASCADE CONSTRAINTS;
+DROP TABLE payment CASCADE CONSTRAINTS;
 DROP TABLE Booking_TABLE CASCADE CONSTRAINTS;
 DROP TABLE house_img CASCADE CONSTRAINTS;
 DROP TABLE reiew_img CASCADE CONSTRAINTS;
 DROP TABLE review CASCADE CONSTRAINTS;
 DROP TABLE rooms_img CASCADE CONSTRAINTS;
 DROP TABLE rooms CASCADE CONSTRAINTS;
+DROP TABLE wishlist CASCADE CONSTRAINTS;
 DROP TABLE house CASCADE CONSTRAINTS;
 DROP TABLE b_event CASCADE CONSTRAINTS;
 DROP TABLE coupon CASCADE CONSTRAINTS;
@@ -26,62 +23,6 @@ DROP TABLE notice CASCADE CONSTRAINTS;
 DROP TABLE qna_category CASCADE CONSTRAINTS;
 DROP TABLE stay CASCADE CONSTRAINTS;
 
-
-
-/* Drop Sequences */
-
-DROP SEQUENCE SEQ_administrator_anum;
-DROP SEQUENCE SEQ_amenities_amenities_num;
-DROP SEQUENCE SEQ_Booking_TABLE_booking_num;
-DROP SEQUENCE SEQ_b_event_bnum;
-DROP SEQUENCE SEQ_coupon_coupon_num;
-DROP SEQUENCE SEQ_eventimages_eimgnum;
-DROP SEQUENCE SEQ_event_enum;
-DROP SEQUENCE SEQ_event_event_num;
-DROP SEQUENCE SEQ_faqcategory_fcnum;
-DROP SEQUENCE faq_seq;
-DROP SEQUENCE SEQ_grade_gnum;
-DROP SEQUENCE SEQ_houseintro_house_intro_num;
-DROP SEQUENCE SEQ_house_house_num;
-DROP SEQUENCE SEQ_house_img_house_img_num;
-DROP SEQUENCE SEQ_notice_nnum;
-DROP SEQUENCE payment_seq;
-DROP SEQUENCE SEQ_qnaboard_qna_num;
-DROP SEQUENCE SEQ_qna_category_qna_category_num;
-DROP SEQUENCE SEQ_reiew_img_review_img_num;
-DROP SEQUENCE review_seq;
-DROP SEQUENCE SEQ_rooms_room_num;
-DROP SEQUENCE SEQ_stay_snum;
-
-
-
-
-/* Create Sequences */
-
-CREATE SEQUENCE administrator_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE amenities_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE Booking_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE b_event_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE coupon_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE eventimages_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE event_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE faqcategory_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE faq_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE grade_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE houseintro_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE house_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE house_img_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE notice_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE payment_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE qnaboard_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE qna_category_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE reiew_img_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE review_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE rooms_seq INCREMENT BY 1 START WITH 1;
-CREATE SEQUENCE stay_seq INCREMENT BY 1 START WITH 1;
-
-
-
 /* Create Tables */
 
 -- 관리자정보 테이블
@@ -92,7 +33,7 @@ CREATE TABLE administrator
 	-- 관리자아이디
 	aid varchar2(30) NOT NULL UNIQUE,
 	-- 관리자비밀번호
-	apwd varchar2(30) NOT NULL UNIQUE,
+	apwd varchar2(30) NOT NULL,
 	PRIMARY KEY (anum)
 );
 
@@ -175,15 +116,15 @@ CREATE TABLE event
 	-- 이벤트식별키
 	event_num number(10) NOT NULL,
 	-- 이벤트제목
-	etitle varchar2(100) NOT NULL UNIQUE,
+	etitle varchar2(100) NOT NULL,
 	-- 이벤트등록일
 	eregdate date NOT NULL,
 	-- 이벤트조회수
-	ehit number(10) NOT NULL UNIQUE,
+	ehit number(10) NOT NULL,
 	-- 이벤트 시작일
-	estartday date NOT NULL UNIQUE,
+	estartdate date NOT NULL,
 	-- 이벤트종료일
-	eenddate date NOT NULL UNIQUE,
+	eenddate date NOT NULL,
 	PRIMARY KEY (event_num)
 );
 
@@ -194,9 +135,9 @@ CREATE TABLE eventimages
 	-- 이미지식별키
 	eimgnum number(10) NOT NULL,
 	-- 원본파일명
-	orgfilename varchar2(300) NOT NULL UNIQUE,
+	orgfilename varchar2(300) NOT NULL,
 	-- 저장파일명
-	savefilename varchar2(300) NOT NULL UNIQUE,
+	savefilename varchar2(300) NOT NULL,
 	-- 이벤트식별키
 	event_num number(10) NOT NULL,
 	PRIMARY KEY (eimgnum)
@@ -209,9 +150,9 @@ CREATE TABLE faq
 	-- 문의번호
 	fnum number(10) NOT NULL,
 	-- 자주묻는질문
-	ftitle varchar2(100) NOT NULL UNIQUE,
+	ftitle varchar2(100) NOT NULL,
 	-- 답변
-	fcontent varchar2(2000) NOT NULL UNIQUE,
+	fcontent varchar2(2000) NOT NULL,
 	-- 카테고리식별키
 	fcnum number(10) NOT NULL,
 	PRIMARY KEY (fnum)
@@ -330,17 +271,17 @@ CREATE TABLE notice
 	-- 공지사항번호
 	nnum number(10) NOT NULL,
 	-- 공지글제목
-	ntitle varchar2(100) NOT NULL UNIQUE,
+	ntitle varchar2(100) NOT NULL,
 	-- 공지내용
-	ncontent varchar2(2000) NOT NULL UNIQUE,
+	ncontent varchar2(2000) NOT NULL,
 	-- 공지날짜
-	nregdate date NOT NULL UNIQUE,
+	nregdate date NOT NULL,
 	PRIMARY KEY (nnum)
 );
 
 
 -- 결제테이블
-CREATE TABLE paytable
+CREATE TABLE payment
 (
 	-- 결제번호
 	pay_num number(5) NOT NULL,
@@ -479,6 +420,19 @@ CREATE TABLE stay
 );
 
 
+-- 찜목록
+CREATE TABLE wishlist
+(
+	-- 찜목록식별키
+	wish_num number(10) NOT NULL,
+	-- 회원아이디
+	mid varchar2(15) NOT NULL,
+	-- 업체식별키
+	house_num number(10) NOT NULL,
+	PRIMARY KEY (wish_num)
+);
+
+
 
 /* Create Foreign Keys */
 
@@ -488,7 +442,7 @@ ALTER TABLE houseintro
 ;
 
 
-ALTER TABLE paytable
+ALTER TABLE payment
 	ADD FOREIGN KEY (booking_num)
 	REFERENCES Booking_TABLE (booking_num)
 ;
@@ -500,7 +454,7 @@ ALTER TABLE house
 ;
 
 
-ALTER TABLE paytable
+ALTER TABLE payment
 	ADD FOREIGN KEY (coupon_num)
 	REFERENCES coupon (coupon_num)
 ;
@@ -542,6 +496,12 @@ ALTER TABLE rooms
 ;
 
 
+ALTER TABLE wishlist
+	ADD FOREIGN KEY (house_num)
+	REFERENCES house (house_num)
+;
+
+
 ALTER TABLE Booking_TABLE
 	ADD FOREIGN KEY (mid)
 	REFERENCES members (mid)
@@ -561,6 +521,12 @@ ALTER TABLE qnaboard
 
 
 ALTER TABLE review
+	ADD FOREIGN KEY (mid)
+	REFERENCES members (mid)
+;
+
+
+ALTER TABLE wishlist
 	ADD FOREIGN KEY (mid)
 	REFERENCES members (mid)
 ;
@@ -594,7 +560,7 @@ ALTER TABLE rooms_img
 	ADD FOREIGN KEY (room_num)
 	REFERENCES rooms (room_num)
 ;
-desc booking_Table;
+
 
 ALTER TABLE b_event
 	ADD FOREIGN KEY (snum)
