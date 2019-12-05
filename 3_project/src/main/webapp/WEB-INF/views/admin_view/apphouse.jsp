@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<body id="page-top">
-    <!-- Content Wrapper -->
+
+     <!-- Content Wrapper -->
     <div id="content-wrapper" class="d-flex flex-column">
 
       <!-- Main Content -->
@@ -108,6 +108,8 @@
                       <th>본점소재지</th>
                       <th>사업장소재지</th>                
                       <th>전화번호</th>
+                      <th>승인</th>
+                      <th>거절</th>
                     </tr>
                   </thead>
                   <tfoot>
@@ -119,6 +121,8 @@
                       <th>본점소재지</th>
                       <th>사업장소재지</th>
                       <th>전화번호</th>
+                      <th>승인</th>
+                      <th>거절</th>
                     </tr>
                   </tfoot>
                   <tbody>
@@ -131,6 +135,8 @@
                       <td>${vo.orgaddr}</td>
                       <td>${vo.workplace}</td>
                       <td>${vo.com_Tel}</td>
+                      <td><a href="${cp}/admin_view/uphouse?house_Num=${vo.house_Num}">대기중</a></td>
+                      <td><a href="${cp}/admin_view/delhouse?house_Num=${vo.house_Num}">거절</a></td>
                     </tr>
                     </c:forEach>
                   </tbody>

@@ -40,4 +40,5 @@
 	<context:component-scan base-package="test.app.project.controllerY" />
 	<context:component-scan base-package="test.app.project.daoY" />
 	<context:component-scan base-package="test.app.project.serviceY" />
+	
 </beans:beans>

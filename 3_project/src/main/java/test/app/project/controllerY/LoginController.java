@@ -27,9 +27,7 @@ public class LoginController {
 		HashMap<String,Object> map=new HashMap<String, Object>();
 		map.put("aid",aid);
 		map.put("apwd",apwd);
-		System.out.println(1);
 		HashMap<String,Object> admin=service.login(map);
-		System.out.println(2);
 		if(admin!=null){
 			session.setAttribute("aid",aid);
 			return "admin_view/main";
