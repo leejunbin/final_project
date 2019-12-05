@@ -211,19 +211,20 @@
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-primary text-uppercase mb-1" style="font-size:15px;">월별 매출액 (Monthly)</div>
                       <div>
-                      	연도&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월
+                      	연도&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월
                       	<br>
-                      	<form action="" method="post">
-                      	<select name="year" id="year">
-                      		<option value="2019">2019</option>
-                      		<option value="2018">2018</option>
-                      		<option value="2017">2017</option>
-                      		<option value="2016">2016</option>
-                      		<option value="2015">2015</option>
-                      		<option value="2014">2014</option>
-                      		<option value="2013">2013</option>
+                      	<form action="${cp}/admin/month" method="post">
+                      	<select name="year" id="year" class="form-control form-control-user" style="width:100px;display: inline-block;">
+                      		<option value="19" selected="selected">2019</option>
+                      		<option value="18">2018</option>
+                      		<option value="17">2017</option>
+                      		<option value="16">2016</option>
+                      		<option value="15">2015</option>
+                      		<option value="14">2014</option>
+                      		<option value="13">2013</option>
                       	</select>&nbsp;&nbsp;&nbsp;&nbsp;
-                      	<select name="month" id="month">
+                      	<select name="month" id="month" class="form-control form-control-user" style="width:80px;display: inline-block;">
                       		<option value="01">1월</option>
                       		<option value="02">2월</option>
                       		<option value="03">3월</option>
@@ -235,16 +236,16 @@
                       		<option value="09">9월</option>
                       		<option value="10">10월</option>
                       		<option value="11">11월</option>
-                      		<option value="12">12월</option>
+                      		<option value="12" selected="selected">12월</option>
                       	</select>&nbsp;&nbsp;&nbsp;&nbsp;
-                      	<input type="submit" value="조회">
+                      	<!--  <input type="submit" value="조회">-->
+                      	<button id="search" class="btn btn-success btn-circle">
+                      		 <i class="fas fa-check"></i>
+                      	</button>
                       	</form>
                       </div>
                       <br>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">40,000원</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                      <div class="h3 mb-0 font-weight-bold text-gray-800">${coma}원</div>
                     </div>
                   </div>
                 </div>
@@ -257,15 +258,23 @@
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">기간별 매출액 (Period)</div>
-                      <div>
-                      	<input type="text" id="cal2">&nbsp;&nbsp;
-                      	<input type="text" id="cal3">
+                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1" style="font-size:15px;">기간별 매출액 (Period)</div>
+                      <div style="display: inline-block;">
+                      <form action="${cp}/admin/period" method="post">
+                      	<!--  <input type="text" id="cal2">&nbsp;&nbsp;-->
+                      	<input type="text" name="startday" value="${startday}" class="form-control form-control-user" id="cal2" placeholder="시작일" style="width:240px;display: inline-block;">&nbsp;&nbsp;
+                      	<!--  <input type="text" id="cal3">&nbsp;&nbsp;&nbsp;&nbsp;--><br><br>
+                      	<input type="text" name="endday" value="${endday}" class="form-control form-control-user" id="cal3" placeholder="마지막일" style="width:240px;display: inline;">&nbsp;&nbsp;&nbsp;&nbsp;
+                      	<br><br>
+                      	<button id="psearch" class="btn btn-info btn-icon-split" style="background-color:#1cc88a;display: inline-block;">
+                      		<span class="icon text-white-50">
+                     			<i class="fas fa-info-circle"></i>
+                    	    </span>
+                    	    <span class="text">조회</span>
+                      	</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      	<div class="h3 mb-0 font-weight-bold text-gray-800" style="display: inline-block;">${periodSum}원</div>
+                      	</form>
                       </div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
                     </div>
                   </div>
                 </div>
@@ -305,7 +314,15 @@
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                       <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">등록된 업체수</div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                      <div>
+                      	<select name="company" class="form-control form-control-user" style="width:230px;">
+                      		<option value="호텔">호텔</option>
+                      		<option value="모텔">모텔</option>
+                      		<option value="리조트">리조트</option>
+                      	</select>
+                      </div>
+                      <br>
+                      <div class="h3 mb-0 font-weight-bold text-gray-800">18</div>
                     </div>
                     <div class="col-auto">
                       <i class="fas fa-comments fa-2x text-gray-300"></i>

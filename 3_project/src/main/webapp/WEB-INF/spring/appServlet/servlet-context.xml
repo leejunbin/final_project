@@ -39,6 +39,9 @@
 		<beans:property name="order" value="1"/>
 	</beans:bean>
 	
+	<!-- @Autowired 적용하기 위해 사용됨 -->
+	<context:annotation-config/>
+	
 	<context:component-scan base-package="test.app.project.controller" />
 	<context:component-scan base-package="test.app.project.controllerY" />
 	<context:component-scan base-package="test.app.project.daoY" />

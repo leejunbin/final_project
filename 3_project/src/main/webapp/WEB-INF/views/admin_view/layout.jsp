@@ -24,6 +24,7 @@
 $(function(){
 	$("#cal").datepicker({
 		showOn: "both",
+		buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
 		dateFormat: "yy/mm/dd", //날짜포맷형식
 		dayNamesMin: ["일","월","화","수","목","금","토"],//배열형태로 들어가야함
 		monthNames: ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],
@@ -33,6 +34,7 @@ $(function(){
 	});
 	$("#cal2").datepicker({
 		showOn: "both",
+		buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
 		dateFormat: "yy/mm/dd", //날짜포맷형식
 		dayNamesMin: ["일","월","화","수","목","금","토"],//배열형태로 들어가야함
 		monthNames: ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],
@@ -42,6 +44,7 @@ $(function(){
 	});
 	$("#cal3").datepicker({
 		showOn: "both",
+		buttonImage: "http://jqueryui.com/resources/demos/datepicker/images/calendar.gif",
 		dateFormat: "yy/mm/dd", //날짜포맷형식
 		dayNamesMin: ["일","월","화","수","목","금","토"],//배열형태로 들어가야함
 		monthNames: ["1월","2월","3월","4월","5월","6월","7월","8월","9월","10월","11월","12월"],
@@ -115,7 +118,21 @@ $(function(){
           </div>
         </div>
       </li>
-
+	
+	  <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsemember" aria-expanded="true" aria-controls="collapsemember">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>회원</span>
+        </a>
+        <div id="collapsemember" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Custom Utilities:</h6>
+            <a class="collapse-item" href="${cp}/admin/members">등록회원조회</a>
+            <a class="collapse-item" href="utilities-border.html"></a>
+          </div>
+        </div>
+      </li>
+	  
       <!-- Divider -->
       <hr class="sidebar-divider">
 
