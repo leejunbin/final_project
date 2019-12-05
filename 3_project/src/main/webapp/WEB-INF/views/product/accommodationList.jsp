@@ -13,12 +13,11 @@
                     <div class="col-lg-3">
                         <div class="shop-sidebar mr-50">
                             <div class="sidebar-widget mb-50">
-                                <h3 class="sidebar-title">날짜1</h3>
+                                <h3 class="sidebar-title">날짜222</h3>
                                 <div class="sidebar-search">
-                                    <div class="t-datepicker" id="t-datepicker"">
-									  <div class="t-check-in"></div>
-									  <div class="t-check-out"></div>
-									</div>
+                                   <input type="text" id="startDate" style="width:130px;">
+									<input type="text" id="endDate" style="width:130px;">
+                                    
                                 </div>
                             </div>
                             
@@ -31,8 +30,7 @@
 	  									<input type="checkbox" style="width:20px; height:20px;">
 	  									<label class="custom-control-label" for="customCheck1">프로모션</label>
                             </div>
-
-                            <div class="sidebar-widget mb-40">
+<div class="sidebar-widget mb-40">
                                 <h3 class="sidebar-title">Filter by Price</h3>
                                 <div class="price_filter">
                                     <div id="slider-range"></div>
@@ -388,12 +386,36 @@
             </div>
         </div>
  <script type="text/javascript">
- $(document).ready(function(){
-   $(".t-datepicker").tDatePicker({
-     autoClose: true,
-     // more options here ...
-   })
- })
+ $("#startDate").datepicker({
+		dateFormat: "yy-mm-dd", // 날짜의 형식
+		minDate: 0,
+		nextText: ">",
+		prevText: "<",
+		//autoclose: false,
+		altFormat: "yy-mm-dd",
+		gotoCurrent: true,
+		onSelect: function (date) {
+			
+			var endDate = $('#endDate');
+			var startDate = $(this).datepicker('getDate');
+			var minDate = $(this).datepicker('getDate');
+			$("#startDate").datepicker('show');
+			endDate.datepicker('setDate', minDate);
+			startDate.setDate(startDate.getDate() + 30);
+			endDate.datepicker('option', 'maxDate', startDate);
+			endDate.datepicker('option', 'minDate', minDate);
+		},
+		onClose: function(data){
+			$("#endDate").datepicker("show");
+		}
+	});
+
+	$('#endDate').datepicker({
+		dateFormat: "yy-mm-dd", // 날짜의 형식
+		nextText: ">",
+		prevText: "<"
+	});
+
 </script>        
 
         

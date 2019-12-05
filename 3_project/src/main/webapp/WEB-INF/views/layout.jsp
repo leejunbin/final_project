@@ -10,13 +10,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Colo Shop Template">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
-        crossorigin="anonymous"></script>
-<script src="${pageContext.request.contextPath }/resources/date/theme/js/t-datepicker.min.js"></script>
-<link href="${pageContext.request.contextPath }/resources/date/theme/css/t-datepicker.min.css" rel="stylesheet" type="text/css">
-<link href="${pageContext.request.contextPath }/resources/date/theme/css/themes/t-datepicker-bluegrey.css" rel="stylesheet" type="text/css"><!-- 색변경 -->
+<!-- 
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/js/jquery-ui.css"> -->
+<script src="${pageContext.request.contextPath}/resources/js/jquery-3.4.1.js"></script> 
+<script src="${pageContext.request.contextPath}/resources/js/jquery-ui.js"></script> 
 
 
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/styles/bootstrap4/bootstrap.min.css">
@@ -29,8 +26,7 @@
 
 <!-- ezone템플릿 css -->
 <!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-		
+<link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath }assets/img/favicon.png">
 <!-- all css here -->
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/magnific-popup.css">
@@ -45,6 +41,22 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/style.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/responsive.css">
 <script src="${pageContext.request.contextPath}/resources/ezone/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/js/jquery-ui.css">
+<style>
+	
+.ui-datepicker-week-end{color:#f00;}
+.ui-datepicker-current-day
+{
+    background: #83C948
+}
+/* today's background color */
+.ui-datepicker-today 
+{
+    background: #83C948
+}
+</style>
+
 </head>
 <body>
 <div class="super_container">
@@ -60,16 +72,16 @@
 </div>
 </body>
 
-
-<script src="${pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"></script>
+<!-- 
+<script src="${pageContext.request.contextPath}/resources/js/jquery-3.2.1.min.js"></script> -->
 <script src="${pageContext.request.contextPath}/resources/styles/bootstrap4/popper.js"></script>
 <script src="${pageContext.request.contextPath}/resources/styles/bootstrap4/bootstrap.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/plugins/Isotope/isotope.pkgd.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
 <script src="${pageContext.request.contextPath}/resources/plugins/easing/easing.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/custom.js"></script>
-<!-- ezone 템플릿-->
-<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/vendor/jquery-1.12.0.min.js"></script>
+<!-- ezone 템플릿
+<script src="${pageContext.request.contextPath}/resources/ezone/assets/js/vendor/jquery-1.12.0.min.js"></script>-->
 <script src="${pageContext.request.contextPath}/resources/ezone/assets/js/popper.js"></script>
 <script src="${pageContext.request.contextPath}/resources/ezone/assets/js/bootstrap.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/ezone/assets/js/jquery.magnific-popup.min.js"></script>
