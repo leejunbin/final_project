@@ -46,5 +46,12 @@ public class MembersDaoImpl implements MembersDao{
 	public MembersVo findPwd(HashMap<String, String> map) {
 		return sqlSessionTemplate.selectOne(NAMESPACE+".findPwd", map);
 	}
+
+	@Override
+	public int changePwd(MembersVo vo) {
+		
+		return sqlSessionTemplate.update(NAMESPACE+".changePwd", vo);
+	
+	}
 	
 }

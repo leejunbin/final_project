@@ -23,4 +23,9 @@
 	<select id="findPwd" parameterType="hashmap" resultType="members">
 		SELECT * FROM members WHERE mid=#{mid} AND memail=#{memail}
 	</select>
+	
+	<!-- 임시비밀번호로 비밀번호 변경 -->
+	<update id="changePwd" parameterType="members">
+		UPDATE members SET mpwd=#{mpwd} WHERE mid=#{mid}
+	</update>
 </mapper>

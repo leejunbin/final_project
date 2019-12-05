@@ -41,7 +41,7 @@ public class HouseVo {
 	private String workplace;
 
 	/** 사업장전화번호. */
-	private String comTel;
+	private String com_Tel;
 
 	/** 승인여부. */
 	private String approval;
@@ -53,7 +53,7 @@ public class HouseVo {
 
 
 	public HouseVo(int houseNum, int bnum, String intro, java.sql.Date checkintime, java.sql.Date checkouttime,
-			String conpany, String license, String ceo, String orgaddr, String workplace, String comTel,
+			String conpany, String license, String ceo, String orgaddr, String workplace, String com_Tel,
 			String approval) {
 		super();
 		this.houseNum = houseNum;
@@ -66,7 +66,7 @@ public class HouseVo {
 		this.ceo = ceo;
 		this.orgaddr = orgaddr;
 		this.workplace = workplace;
-		this.comTel = comTel;
+		this.com_Tel = com_Tel;
 		this.approval = approval;
 	}
 
@@ -171,13 +171,13 @@ public class HouseVo {
 	}
 
 
-	public String getComTel() {
-		return comTel;
+	public String getCom_Tel() {
+		return com_Tel;
 	}
 
 
-	public void setComTel(String comTel) {
-		this.comTel = comTel;
+	public void setComTel(String com_Tel) {
+		this.com_Tel = com_Tel;
 	}
 
 

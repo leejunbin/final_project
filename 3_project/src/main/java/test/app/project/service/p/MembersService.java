@@ -36,4 +36,9 @@ public class MembersService {
 		return membersDaoImpl.findPwd(map);
 		
 	}
+	
+	// 임시비밀번호로 변경
+	public int changePwd(MembersVo vo){
+		return membersDaoImpl.changePwd(vo);
+	}
 }

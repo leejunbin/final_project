@@ -13,4 +13,6 @@ public interface MembersDao {
 	public MembersVo idCheck(String mid);
 	
 	public MembersVo findPwd(HashMap<String, String> map);
+	
+	public int changePwd(MembersVo vo);
 }
