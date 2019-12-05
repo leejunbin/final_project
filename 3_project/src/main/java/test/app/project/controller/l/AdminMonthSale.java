@@ -29,14 +29,11 @@ public class AdminMonthSale {
 	}
 	@RequestMapping(value="/admin/period",method=RequestMethod.POST)
 	public String Periodsale(String startday,String endday,Model model){
-		System.out.println("startday: " + startday);
-		System.out.println("endday: " + endday);
 		HashMap<String, Object> map=new HashMap<String, Object>();
 		DecimalFormat dc=new DecimalFormat("###,###,###,###");
 		map.put("startday", startday);
 		map.put("endday", endday);
 		int sumprice=service.periodsale(map);
-		System.out.println("sumprice: " + sumprice);
 		String coma=dc.format(sumprice);
 		model.addAttribute("periodSum",coma);
 		model.addAttribute("startday",startday);
