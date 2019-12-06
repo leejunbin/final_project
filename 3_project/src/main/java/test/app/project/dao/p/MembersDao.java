@@ -1,9 +1,9 @@
 package test.app.project.dao.p;
 
+
 import java.util.HashMap;
 
 import test.app.project.vo.MembersVo;
-import test.app.project.vo.QnaCategoryVo;
 import test.app.project.vo.QnaboardVo;
 
 public interface MembersDao {
@@ -25,5 +25,9 @@ public interface MembersDao {
 	public int myinfoupdate(MembersVo vo);
 	
 	public int qnainsert(QnaboardVo vo);
+	
+	public java.util.List<HashMap<String, Object>> qnalist(String mid);
+	
+	public HashMap<String, Object> qnaDetail(int qna_num);
 	
 }

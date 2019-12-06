@@ -50,7 +50,7 @@
 		<dd><a href="/app/mypage/order_list_opt">주문 내역 조회</a></dd>
 		<dd><a href="/app/mypage/write_review">구매후기</a></dd>
 		<dd><a href="/app/mypage/raffle" class="is-active">래플 응모내역</a></dd>
-		<dd><a href="/app/mypage/qa">상품문의</a></dd>
+		<dd><a href="${pageContext.request.contextPath }/members/qnalist">문의내역</a></dd>
 		<dd><a href="/app/mypage/counsel">1:1문의</a></dd>
 		<dd><a href="/app/mypage/viewed_goods">최근 본 상품</a></dd>
 		<dd><a href="/app/mypage/favorite_goods">좋아요</a></dd>

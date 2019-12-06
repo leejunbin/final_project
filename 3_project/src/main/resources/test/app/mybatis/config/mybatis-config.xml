@@ -13,7 +13,9 @@
 -->
 	<typeAliases>
 		<typeAlias type="test.app.project.vo.MembersVo" alias="members"/>
+		<typeAlias type="test.app.project.vo.QnaboardVo" alias="qnaboard"/>
 	</typeAliases>
+
 	<mappers>
 		<mapper resource="test/app/mybatis/mapper/p/MembersMapper.xml"/>
 	</mappers>

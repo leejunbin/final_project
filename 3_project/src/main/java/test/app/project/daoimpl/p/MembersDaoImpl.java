@@ -1,5 +1,6 @@
 package test.app.project.daoimpl.p;
 
+
 import java.util.HashMap;
 
 import org.mybatis.spring.SqlSessionTemplate;
@@ -8,7 +9,6 @@ import org.springframework.stereotype.Repository;
 
 import test.app.project.dao.p.MembersDao;
 import test.app.project.vo.MembersVo;
-import test.app.project.vo.QnaCategoryVo;
 import test.app.project.vo.QnaboardVo;
 
 @Repository
@@ -81,6 +81,19 @@ public class MembersDaoImpl implements MembersDao{
 	@Override
 	public int qnainsert(QnaboardVo vo) {
 		return sqlSessionTemplate.insert(NAMESPACE+".qnainsert", vo);
+	}
+	
+	// 문의글 리스트
+	@Override
+	public java.util.List<HashMap<String, Object>> qnalist(String mid) {
+		return sqlSessionTemplate.selectList(NAMESPACE+".qnalist", mid);
+		
+	}
+	
+	// 문의글 상세보기
+	@Override
+	public HashMap<String, Object> qnaDetail(int qna_num) {
+		return sqlSessionTemplate.selectOne(NAMESPACE+".qnaDetail", qna_num);
 	}
 	
 }
