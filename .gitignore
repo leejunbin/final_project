@@ -1,7 +1,7 @@
 # Created by https://www.gitignore.io/api/java,eclipse,gradle
 
 ### Eclipse ###
-
+.properties
 .metadata
 bin/
 tmp/
