@@ -10,6 +10,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Colo Shop Template">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/styles/bootstrap4/bootstrap.min.css">
 <link href="${pageContext.request.contextPath}/resources/plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -21,46 +24,10 @@
 
 <script type="text/javascript" src="${pageContext.request.contextPath }/resources/jquery/jquery-3.4.1.js"></script>
 
-<!-- ezone템플릿 css -->
-<!-- Favicon -->
-<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-		
-<!-- all css here -->
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/magnific-popup.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/animate.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/owl.carousel.min.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/themify-icons.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/pe-icon-7-stroke.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/icofont.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/meanmenu.min.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/jquery-ui.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/bundle.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/style.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/responsive.css">
-<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-
-<!-- <link rel="stylesheet" href="${pageConctext.request.contextPath }/resources/detailcss/detail.css">
-<link rel="stylesheet" href="${pageConctext.request.contextPath }/resources/detailcss/detail2.css"> -->
-
-<!-- 상세페이지 css -->
-<!-- all css here -->
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/magnific-popup.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/animate.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/themify-icons.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/pe-icon-7-stroke.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/icofont.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/meanmenu.min.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/easyzoom.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/bundle.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/style.css">
-        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/responsive.css">
-        <script src="${pageContext.request.contextPath }/resources/ezone/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
 
-	<!-- 마이페이지 -->
+
+<!-- 마이페이지 -->
 	<link type="text/css" rel="stylesheet" href="//static.msscdn.net/skin/musinsa/css/mypage.min.css?20191119">
 	<link rel="stylesheet" type="text/css" href="//static.msscdn.net/skin/musinsa/css/magazine_common.css?20191107_1">
 	<link rel="stylesheet" type="text/css" href="//static.msscdn.net/skin/musinsa/css/store_common.css?20191106_4">
@@ -98,11 +65,57 @@
 	<!-- 매거진 관심브랜드 관련 스크립트 -->
 	<script type="text/javascript" src="https://www.musinsa.com/layouts/community/js/ex.script.js"></script>
 	<!--// 매거진 관심브랜드 관련 스크립트 -->
+
+
+
+
+<!-- <link rel="stylesheet" href="${pageConctext.request.contextPath }/resources/detailcss/detail.css">
+<link rel="stylesheet" href="${pageConctext.request.contextPath }/resources/detailcss/detail2.css"> -->
+
+		<!-- 상세페이지 css -->
+		<!-- all css here -->
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/animate.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/themify-icons.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/icofont.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/meanmenu.min.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/easyzoom.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/bundle.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/style.css">
+        <link rel="stylesheet" href="${pageContext.request.contextPath }/resources/ezone/assets/css/responsive.css">
+        <script src="${pageContext.request.contextPath }/resources/ezone/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 	
 	<!-- 유사 이미지 상품 검색 -->
 	<link type="text/css" rel="stylesheet" href="//static.msscdn.net/skin/musinsa/css/image_search.css?20181203_02">
-	<!-- 부트스트랩 기본 css -->
+	
+	
+	<!-- ezone템플릿 css -->
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="${pageContext.request.contextPath }/resources/assets/img/favicon.png">
+		
+<!-- all css here -->
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/magnific-popup.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/animate.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/themify-icons.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/pe-icon-7-stroke.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/icofont.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/meanmenu.min.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/jquery-ui.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/bundle.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/style.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/ezone/assets/css/responsive.css">
+<script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+	
+	
+		<!-- 부트스트랩 기본 css -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	
 	
 </head>
 <body>

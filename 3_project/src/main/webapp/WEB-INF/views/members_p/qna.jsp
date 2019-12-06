@@ -87,7 +87,7 @@
 			</div>
 			<div class="custom-control custom-radio custom-control-inline">
 			  <input type="radio" id="customRadioInline3" name="qna_category_num" class="custom-control-input" value="3">
-			  <label class="custom-control-label" for="customRadioInline2">기타</label>
+			  <label class="custom-control-label" for="customRadioInline3">기타</label>
 			</div>
 			
 			

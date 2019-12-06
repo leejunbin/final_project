@@ -50,7 +50,47 @@
 	</update>
 	
 	<!-- 문의글 등록하기 -->
-	<insert id="qnainsert">
+	<insert id="qnainsert" parameterType="qnaboard">
 		INSERT INTO qnaboard VALUES(qnaboard_seq.nextval,#{mid},#{qna_category_num},#{qna_title},#{qna_content},null,sysdate,null)
 	</insert>
+	
+	<!-- 회원 본인이 작성한 문의 내역 조회 -->
+	<select id="qnalist" parameterType="String" resultType="hashmap">
+		SELECT 
+				q.qna_num,
+				q.mid,
+				q.qna_category_num,
+				q.qna_title,
+				q.qna_content,
+				q.anwser,
+				q.qna_date,
+				qc.qna_category_name
+		FROM 
+				qnaboard q,qna_category qc
+		WHERE 
+				q.qna_category_num = qc.qna_category_num
+			  	AND q.mid = #{mid}
+		ORDER BY 
+				qna_date DESC
+	</select>
+	
+	<!-- 해당 번호 문의글 상세정보 보기 -->
+	<select id="qnaDetail" parameterType="int" resultType="hashmap">
+		SELECT 
+				q.qna_num,
+				q.mid,
+				q.qna_category_num,
+				q.qna_title,
+				q.qna_content,
+				q.anwser,
+				to_char(q.qna_date,'yyyy/mm/dd hh:mi') qna_date,
+				to_char(q.anwser_date,'yyyy/mm/dd hh:mi') anwser_date,
+				qc.qna_category_name
+		FROM 
+				qnaboard q,qna_category qc
+		WHERE 
+				q.qna_category_num = qc.qna_category_num
+				AND q.qna_num = #{qna_num}
+	</select>
+	
 </mapper>
