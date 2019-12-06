@@ -5,11 +5,11 @@
 	<header class="header trans_300">
 		<!-- Top Navigation -->
 
-		<div class="top_nav">
+		<div class="top_nav" style='background-color: red;'>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="top_nav_left">free shipping on all u.s orders over $50</div>
+	
 					</div>
 					<div class="col-md-6 text-right">
 						<div class="top_nav_right">
@@ -17,39 +17,31 @@
 
 								<!-- Currency / Language / My Account -->
 
-								<li class="currency">
-									<a href="#">
-										usd
-										<i class="fa fa-angle-down"></i>
-									</a>
-									<ul class="currency_selection">
-										<li><a href="#">cad</a></li>
-										<li><a href="#">aud</a></li>
-										<li><a href="#">eur</a></li>
-										<li><a href="#">gbp</a></li>
-									</ul>
+								<li class="currency" style='background-color: red;border:none;'>
+									<a href="#" style='color:white;'>예약내역</a>
 								</li>
-								<li class="language">
-									<a href="#">
-										English
+								<li class="language" style='background-color: red;border:none;'>
+									<a href="#" style='color:white;'>
+										더보기
 										<i class="fa fa-angle-down"></i>
 									</a>
 									<ul class="language_selection">
-										<li><a href="#">French</a></li>
-										<li><a href="#">Italian</a></li>
-										<li><a href="#">German</a></li>
-										<li><a href="#">Spanish</a></li>
+										<li><a href="#">공지사항</a></li>
+										<li><a href="#">이벤트</a></li>
+										<li><a href="#">FAQ</a></li>
+										<li><a href="#">약관 및 정책</a></li>
 									</ul>
 								</li>
-								<li class="account">
-									<a href="#">
-										My Account
-										<i class="fa fa-angle-down"></i>
+								<li class="account" style='background-color: red;border:none;'>
+									<a href="#" style='color:white;'>
+										로그인
 									</a>
-									<ul class="account_selection">
-										<li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
-										<li><a href="#"><i class="fa fa-user-plus" aria-hidden="true"></i>Register</a></li>
-									</ul>
+
+								</li>
+								<li class="account" style='background-color: red;border:none;'>
+								<a href="<c:url value='/admin_view/login'/>" style='color:white;'>
+										관리자
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -65,24 +57,16 @@
 				<div class="row">
 					<div class="col-lg-12 text-right">
 						<div class="logo_container">
-							<a href="#">colo<span>shop</span></a>
+							<a href="#">요기<span>어때</span></a>
 						</div>
 						<nav class="navbar">
-							<ul class="navbar_menu">
-								<li><a href="#">home</a></li>
-								<li><a href="#">shop</a></li>
-								<li><a href="#">promotion</a></li>
-								<li><a href="#">pages</a></li>
-								<li><a href="#">blog</a></li>
-								<li><a href="contact.html">contact</a></li>
-							</ul>
 							<ul class="navbar_user">
 								<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
 								<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
 								<li class="checkout">
 									<a href="#">
 										<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-										<span id="checkout_items" class="checkout_items">2</span>
+										<!--위시리스트 담긴 갯수 <span id="checkout_items" class="checkout_items"></span> -->
 									</a>
 								</li>
 							</ul>

@@ -3,14 +3,16 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-<!--
 	<typeAliases>
-		<typeAlias type="test.app.spring11.vo.BoardVo" alias="board"/>
+		<typeAlias type="test.app.project.vo.PaymentVo" alias="pay"/>
+		<typeAlias type="test.app.project.vo.MembersVo" alias="members"/>
+		<typeAlias type="test.app.project.vo.CouponVo" alias="coupon"/>
 	</typeAliases>
 	<mappers>
-		<mapper resource="test/app/mybatis/mapper/BoardMapper.xml"/>
+		<mapper resource="test/app/mybatis/mapperY/AdminMapper.xml"/>
+		<mapper resource="test/app/mybatis/mapperL/PayMapper.xml"/>
+		<mapper resource="test/app/mybatis/mapperL/CouponMapper.xml"/>
 	</mappers>
--->
 </configuration>  
   
   

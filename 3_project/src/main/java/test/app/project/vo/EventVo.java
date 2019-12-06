@@ -11,7 +11,7 @@ public class EventVo{
 
 
 	/** 이벤트식별키. */
-	private int eventNum;
+	private int event_Num;
 
 	/** 이벤트제목. */
 	private String etitle;
@@ -23,7 +23,7 @@ public class EventVo{
 	private int ehit;
 
 	/** 이벤트 시작일. */
-	private java.sql.Date estartday;
+	private java.sql.Date estartdate;
 
 	/** 이벤트종료일. */
 	private java.sql.Date eenddate;
@@ -37,24 +37,24 @@ public class EventVo{
 	}
 
 
-	public EventVo(int eventNum, String etitle, java.sql.Date eregdate, int ehit, java.sql.Date estartday, java.sql.Date eenddate) {
+	public EventVo(int event_Num, String etitle, java.sql.Date eregdate, int ehit, java.sql.Date estartdate, java.sql.Date eenddate) {
 		super();
-		this.eventNum = eventNum;
+		this.event_Num = event_Num;
 		this.etitle = etitle;
 		this.eregdate = eregdate;
 		this.ehit = ehit;
-		this.estartday = estartday;
+		this.estartdate = estartdate;
 		this.eenddate = eenddate;
 	}
 
 
-	public int getEventNum() {
-		return eventNum;
+	public int getEvent_Num() {
+		return event_Num;
 	}
 
 
-	public void setEventNum(int eventNum) {
-		this.eventNum = eventNum;
+	public void setEvent_Num(int event_Num) {
+		this.event_Num = event_Num;
 	}
 
 
@@ -72,6 +72,7 @@ public class EventVo{
 		return eregdate;
 	}
 
+	
 
 	public void setEregdate(java.sql.Date eregdate) {
 		this.eregdate = eregdate;
@@ -88,13 +89,13 @@ public class EventVo{
 	}
 
 
-	public java.sql.Date getEstartday() {
-		return estartday;
+	public java.sql.Date getEstartdate() {
+		return estartdate;
 	}
 
 
-	public void setEstartday(java.sql.Date estartday) {
-		this.estartday = estartday;
+	public void setEstartdate(java.sql.Date estartdate) {
+		this.estartdate = estartdate;
 	}
 
 
