@@ -172,7 +172,27 @@ $(function(){
       <li class="nav-item">
         <a class="nav-link" href="${cp}/admin_view/table">
           <i class="fas fa-fw fa-table"></i>
+          <span>회원목록</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="${cp}/admin_view/housetable">
+          <i class="fas fa-fw fa-table"></i>
           <span>업체목록</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="${cp}/admin_view/apphouse">
+          <i class="fas fa-fw fa-table"></i>
+          <span>업체승인목록</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="${cp}/admin_view/noticeboard">
+          <i class="fas fa-fw fa-table"></i>
+          <span>공지사항</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="${cp}/admin_view/eventboard">
+          <i class="fas fa-fw fa-table"></i>
+          <span>이벤트</span></a>
       </li>
 
       <!-- Divider -->
