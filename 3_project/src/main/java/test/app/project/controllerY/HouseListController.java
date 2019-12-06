@@ -5,6 +5,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -20,21 +21,23 @@ public class HouseListController {
 	public void setService(AdminService service) {
 		this.service = service;
 	}
+	@RequestMapping(value="/admin_view/table",method=RequestMethod.GET)
+	public String loginForm(){
+		return ".table";
+	}
 
-	@RequestMapping(value = "/admin_view/table", method = RequestMethod.GET)
-	public ModelAndView list() {
+	@RequestMapping(value = "/admin_view/housetable", method = RequestMethod.GET)
+	public String list(Model model) {
 		List<HouseVo> mlist = service.listAll();
-		ModelAndView mv = new ModelAndView("admin_view/table");
-		mv.addObject("list", mlist);
-		return mv;
+		model.addAttribute("list",mlist);
+		return ".housetable";
 	}
 
 	@RequestMapping(value = "/admin_view/apphouse", method = RequestMethod.GET)
-	public ModelAndView applist() {
+	public String applist(Model model) {
 		List<HouseVo> alist = service.applistAll();
-		ModelAndView mv = new ModelAndView("admin_view/apphouse");
-		mv.addObject("list", alist);
-		return mv;
+		model.addAttribute("list", alist);
+		return ".apphouse";
 	}
 
 	@RequestMapping(value = "/admin_view/uphouse", method = RequestMethod.GET)

@@ -8,6 +8,7 @@ import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -24,11 +25,10 @@ public class BoardController {
 		this.service = service;
 	}
 	@RequestMapping(value = "/admin_view/noticeboard", method = RequestMethod.GET)
-	public ModelAndView applist() {
+	public String applist(Model model) {
 		List<NoticeVo> nlist = service.nlistAll();
-		ModelAndView mv = new ModelAndView("admin_view/noticeboard");
-		mv.addObject("list", nlist);
-		return mv;
+		model.addAttribute("list", nlist);
+		return ".noticeboard";
 	}
 	@RequestMapping(value = "/admin_view/writenotice", method = RequestMethod.GET)
 	public String lookwrite(){

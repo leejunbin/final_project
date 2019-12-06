@@ -30,7 +30,7 @@ public class LoginController {
 		HashMap<String,Object> admin=service.login(map);
 		if(admin!=null){
 			session.setAttribute("aid",aid);
-			return "admin_view/main";
+			return ".admin";
 		}else{
 			return "admin_view/login";
 		}
