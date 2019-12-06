@@ -3,7 +3,7 @@
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!-- Slider -->
-<!-- 20191206 TEST -->
+<!-- 20191206 NEW TEST -->
 <div class="main_slider"
 	style="background-image:url(${pageContext.request.contextPath }/resources/images/slider_1.jpg)">
 	<div class="container fill_height">
