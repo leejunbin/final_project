@@ -30,9 +30,19 @@
 	
 	<!-- 마이페이지 회원정보 담아가기 -->
 	<select id="myinfo" parameterType="String" resultType="hashmap">
-		SELECT m.mid,m.mname,m.mpwd,m.mphone,m.memail,SUBSTR(m.mregdate,1,10) mregdate,m.mpoint,g.gname
-		FROM members m,grade g
-		WHERE m.gnum = g.gnum AND m.mid=#{mid}
+		SELECT 
+				m.mid,
+				m.mname,
+				m.mpwd,
+				m.mphone,
+				m.memail,
+				to_char(m.mregdate,'yyyy/mm/dd') mregdate,
+				m.mpoint,
+				g.gname
+		FROM 
+				members m,grade g
+		WHERE 
+				m.gnum = g.gnum AND m.mid=#{mid}
 	</select>
 	
 	<!-- 회원의 쿠폰 갯수 얻어오기 -->

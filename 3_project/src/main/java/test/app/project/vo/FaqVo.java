@@ -9,6 +9,7 @@ package test.app.project.vo;
  */
 public class FaqVo {
 
+
 	/** 문의번호. */
 	private int fnum;
 
@@ -66,6 +67,5 @@ public class FaqVo {
 	public void setFcnum(int fcnum) {
 		this.fcnum = fcnum;
 	}
-
 
 }

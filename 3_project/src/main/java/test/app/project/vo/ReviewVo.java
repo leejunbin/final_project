@@ -1,5 +1,6 @@
 package test.app.project.vo;
 
+import java.sql.Date;
 
 /**
  * 후기게시판 모델 클래스.
@@ -11,7 +12,7 @@ public class ReviewVo {
 
 
 	/** 후기식별키. */
-	private int reviewNum;
+	private int review_num;
 
 	/** 객실정보. */
 	private int room_num;
@@ -20,13 +21,13 @@ public class ReviewVo {
 	private String mid;
 
 	/** 리뷰제목. */
-	private String reviewTitle;
+	private String review_title;
 
 	/** 리뷰내용. */
-	private String reviewContent;
+	private String review_content;
 
 	/** 후기작성일. */
-	private java.sql.Date reviewDate;
+	private Date review_date;
 
 	/** 친절도. */
 	private int kindness;
@@ -37,117 +38,97 @@ public class ReviewVo {
 	/** 편의성. */
 	private int convenience;
 
-
 	/**
 	 * 생성자.
 	 */
 	public ReviewVo() {
-		
 	}
 
-
-	public ReviewVo(int reviewNum, int room_num, String mid, String reviewTitle, String reviewContent,
-			java.sql.Date reviewDate, int kindness, int clean, int convenience) {
+	public ReviewVo(int review_num, int room_num, String mid, String review_title, String review_content,
+			Date review_date, int kindness, int clean, int convenience) {
 		super();
-		this.reviewNum = reviewNum;
+		this.review_num = review_num;
 		this.room_num = room_num;
 		this.mid = mid;
-		this.reviewTitle = reviewTitle;
-		this.reviewContent = reviewContent;
-		this.reviewDate = reviewDate;
+		this.review_title = review_title;
+		this.review_content = review_content;
+		this.review_date = review_date;
 		this.kindness = kindness;
 		this.clean = clean;
 		this.convenience = convenience;
 	}
 
-
-	public int getReviewNum() {
-		return reviewNum;
+	public int getReview_num() {
+		return review_num;
 	}
 
-
-	public void setReviewNum(int reviewNum) {
-		this.reviewNum = reviewNum;
+	public void setReview_num(int review_num) {
+		this.review_num = review_num;
 	}
-
 
 	public int getRoom_num() {
 		return room_num;
 	}
 
-
 	public void setRoom_num(int room_num) {
 		this.room_num = room_num;
 	}
-
 
 	public String getMid() {
 		return mid;
 	}
 
-
 	public void setMid(String mid) {
 		this.mid = mid;
 	}
 
-
-	public String getReviewTitle() {
-		return reviewTitle;
+	public String getReview_title() {
+		return review_title;
 	}
 
-
-	public void setReviewTitle(String reviewTitle) {
-		this.reviewTitle = reviewTitle;
+	public void setReview_title(String review_title) {
+		this.review_title = review_title;
 	}
 
-
-	public String getReviewContent() {
-		return reviewContent;
+	public String getReview_content() {
+		return review_content;
 	}
 
-
-	public void setReviewContent(String reviewContent) {
-		this.reviewContent = reviewContent;
+	public void setReview_content(String review_content) {
+		this.review_content = review_content;
 	}
 
-
-	public java.sql.Date getReviewDate() {
-		return reviewDate;
+	public Date getReview_date() {
+		return review_date;
 	}
 
-
-	public void setReviewDate(java.sql.Date reviewDate) {
-		this.reviewDate = reviewDate;
+	public void setReview_date(Date review_date) {
+		this.review_date = review_date;
 	}
-
 
 	public int getKindness() {
 		return kindness;
 	}
 
-
 	public void setKindness(int kindness) {
 		this.kindness = kindness;
 	}
-
 
 	public int getClean() {
 		return clean;
 	}
 
-
 	public void setClean(int clean) {
 		this.clean = clean;
 	}
-
 
 	public int getConvenience() {
 		return convenience;
 	}
 
-
 	public void setConvenience(int convenience) {
 		this.convenience = convenience;
 	}
+
 
 }

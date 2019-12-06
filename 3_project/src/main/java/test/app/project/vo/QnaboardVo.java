@@ -12,7 +12,7 @@ public class QnaboardVo {
 
 
 	/** 문의번호. */
-	private int qna_Num;
+	private int qna_num;
 
 	/** 회원테이블. */
 	private String mid;
@@ -30,10 +30,10 @@ public class QnaboardVo {
 	private String anwser;
 
 	/** 문의작성일. */
-	private java.sql.Date qna_date;
+	private Date qna_date;
 
 	/** 답변작성일. */
-	private java.sql.Date anwser_date;
+	private Date anwser_date;
 
 	/**
 	 * 생성자.
@@ -41,10 +41,10 @@ public class QnaboardVo {
 	public QnaboardVo() {
 	}
 
-	public QnaboardVo(int qna_Num, String mid, int qna_category_num, String qna_title, String qna_content,
+	public QnaboardVo(int qna_num, String mid, int qna_category_num, String qna_title, String qna_content,
 			String anwser, Date qna_date, Date anwser_date) {
 		super();
-		this.qna_Num = qna_Num;
+		this.qna_num = qna_num;
 		this.mid = mid;
 		this.qna_category_num = qna_category_num;
 		this.qna_title = qna_title;
@@ -54,12 +54,12 @@ public class QnaboardVo {
 		this.anwser_date = anwser_date;
 	}
 
-	public int getQna_Num() {
-		return qna_Num;
+	public int getQna_num() {
+		return qna_num;
 	}
 
-	public void setQna_Num(int qna_Num) {
-		this.qna_Num = qna_Num;
+	public void setQna_num(int qna_num) {
+		this.qna_num = qna_num;
 	}
 
 	public String getMid() {
@@ -102,21 +102,20 @@ public class QnaboardVo {
 		this.anwser = anwser;
 	}
 
-	public java.sql.Date getQna_date() {
+	public Date getQna_date() {
 		return qna_date;
 	}
 
-	public void setQna_date(java.sql.Date qna_date) {
+	public void setQna_date(Date qna_date) {
 		this.qna_date = qna_date;
 	}
 
-	public java.sql.Date getAnwser_date() {
+	public Date getAnwser_date() {
 		return anwser_date;
 	}
 
-	public void setAnwser_date(java.sql.Date anwser_date) {
+	public void setAnwser_date(Date anwser_date) {
 		this.anwser_date = anwser_date;
 	}
 
-	
 }

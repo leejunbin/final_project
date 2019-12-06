@@ -1,6 +1,5 @@
 package test.app.project.vo;
 
-
 /**
  * 업소테이블 모델 클래스.
  * 
@@ -11,7 +10,7 @@ public class HouseVo {
 
 
 	/** 업체식별키. */
-	private int houseNum;
+	private int house_num;
 
 	/** 종목(종류). */
 	private int bnum;
@@ -20,10 +19,10 @@ public class HouseVo {
 	private String intro;
 
 	/** 입실시간. */
-	private java.sql.Date checkintime;
+	private String checkintime;
 
 	/** 퇴실시간. */
-	private java.sql.Date checkouttime;
+	private String checkouttime;
 
 	/** 업체명. */
 	private String conpany;
@@ -41,22 +40,23 @@ public class HouseVo {
 	private String workplace;
 
 	/** 사업장전화번호. */
-	private String com_Tel;
+	private String com_tel;
 
 	/** 승인여부. */
 	private String approval;
 
 
+	/**
+	 * 생성자.
+	 */
 	public HouseVo() {
-
 	}
 
 
-	public HouseVo(int houseNum, int bnum, String intro, java.sql.Date checkintime, java.sql.Date checkouttime,
-			String conpany, String license, String ceo, String orgaddr, String workplace, String com_Tel,
-			String approval) {
+	public HouseVo(int house_num, int bnum, String intro, String checkintime, String checkouttime, String conpany,
+			String license, String ceo, String orgaddr, String workplace, String com_tel, String approval) {
 		super();
-		this.houseNum = houseNum;
+		this.house_num = house_num;
 		this.bnum = bnum;
 		this.intro = intro;
 		this.checkintime = checkintime;
@@ -66,18 +66,18 @@ public class HouseVo {
 		this.ceo = ceo;
 		this.orgaddr = orgaddr;
 		this.workplace = workplace;
-		this.com_Tel = com_Tel;
+		this.com_tel = com_tel;
 		this.approval = approval;
 	}
 
 
-	public int getHouseNum() {
-		return houseNum;
+	public int getHouse_num() {
+		return house_num;
 	}
 
 
-	public void setHouseNum(int houseNum) {
-		this.houseNum = houseNum;
+	public void setHouse_num(int house_num) {
+		this.house_num = house_num;
 	}
 
 
@@ -101,22 +101,22 @@ public class HouseVo {
 	}
 
 
-	public java.sql.Date getCheckintime() {
+	public String getCheckintime() {
 		return checkintime;
 	}
 
 
-	public void setCheckintime(java.sql.Date checkintime) {
+	public void setCheckintime(String checkintime) {
 		this.checkintime = checkintime;
 	}
 
 
-	public java.sql.Date getCheckouttime() {
+	public String getCheckouttime() {
 		return checkouttime;
 	}
 
 
-	public void setCheckouttime(java.sql.Date checkouttime) {
+	public void setCheckouttime(String checkouttime) {
 		this.checkouttime = checkouttime;
 	}
 
@@ -171,13 +171,13 @@ public class HouseVo {
 	}
 
 
-	public String getCom_Tel() {
-		return com_Tel;
+	public String getCom_tel() {
+		return com_tel;
 	}
 
 
-	public void setComTel(String com_Tel) {
-		this.com_Tel = com_Tel;
+	public void setCom_tel(String com_tel) {
+		this.com_tel = com_tel;
 	}
 
 
@@ -189,5 +189,7 @@ public class HouseVo {
 	public void setApproval(String approval) {
 		this.approval = approval;
 	}
-	
+
+
+
 }
