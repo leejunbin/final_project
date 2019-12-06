@@ -6,10 +6,12 @@
 	<typeAliases>
 		<typeAlias type="test.app.project.vo.PaymentVo" alias="pay"/>
 		<typeAlias type="test.app.project.vo.MembersVo" alias="members"/>
+		<typeAlias type="test.app.project.vo.CouponVo" alias="coupon"/>
 	</typeAliases>
 	<mappers>
 		<mapper resource="test/app/mybatis/mapperY/AdminMapper.xml"/>
 		<mapper resource="test/app/mybatis/mapperL/PayMapper.xml"/>
+		<mapper resource="test/app/mybatis/mapperL/CouponMapper.xml"/>
 	</mappers>
 </configuration>  
   

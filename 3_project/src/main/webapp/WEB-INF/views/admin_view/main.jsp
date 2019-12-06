@@ -216,27 +216,27 @@
                       	<br>
                       	<form action="${cp}/admin/month" method="post">
                       	<select name="year" id="year" class="form-control form-control-user" style="width:100px;display: inline-block;">
-                      		<option value="19" selected="selected">2019</option>
-                      		<option value="18">2018</option>
-                      		<option value="17">2017</option>
-                      		<option value="16">2016</option>
-                      		<option value="15">2015</option>
-                      		<option value="14">2014</option>
-                      		<option value="13">2013</option>
+                      		<option value="19" <c:if test="${year=='19'}">selected</c:if>>2019</option>
+                      		<option value="18" <c:if test="${year=='18'}">selected</c:if>>2018</option>
+                      		<option value="17" <c:if test="${year=='17'}">selected</c:if>>2017</option>
+                      		<option value="16" <c:if test="${year=='16'}">selected</c:if>>2016</option>
+                      		<option value="15" <c:if test="${year=='15'}">selected</c:if>>2015</option>
+                      		<option value="14" <c:if test="${year=='14'}">selected</c:if>>2014</option>
+                      		<option value="13" <c:if test="${year=='13'}">selected</c:if>>2013</option>
                       	</select>&nbsp;&nbsp;&nbsp;&nbsp;
                       	<select name="month" id="month" class="form-control form-control-user" style="width:80px;display: inline-block;">
-                      		<option value="01">1월</option>
-                      		<option value="02">2월</option>
-                      		<option value="03">3월</option>
-                      		<option value="04">4월</option>
-                      		<option value="05">5월</option>
-                      		<option value="06">6월</option>
-                      		<option value="07">7월</option>
-                      		<option value="08">8월</option>
-                      		<option value="09">9월</option>
-                      		<option value="10">10월</option>
-                      		<option value="11">11월</option>
-                      		<option value="12" selected="selected">12월</option>
+                      		<option value="01" <c:if test="${month=='01'}">selected</c:if>>1월</option>
+                      		<option value="02" <c:if test="${month=='02'}">selected</c:if>>2월</option>
+                      		<option value="03" <c:if test="${month=='03'}">selected</c:if>>3월</option>
+                      		<option value="04" <c:if test="${month=='04'}">selected</c:if>>4월</option>
+                      		<option value="05" <c:if test="${month=='05'}">selected</c:if>>5월</option>
+                      		<option value="06" <c:if test="${month=='06'}">selected</c:if>>6월</option>
+                      		<option value="07" <c:if test="${month=='07'}">selected</c:if>>7월</option>
+                      		<option value="08" <c:if test="${month=='08'}">selected</c:if>>8월</option>
+                      		<option value="09" <c:if test="${month=='09'}">selected</c:if>>9월</option>
+                      		<option value="10" <c:if test="${month=='10'}">selected</c:if>>10월</option>
+                      		<option value="11" <c:if test="${month=='11'}">selected</c:if>>11월</option>
+                      		<option value="12" <c:if test="${month=='12'}">selected</c:if>>12월</option>
                       	</select>&nbsp;&nbsp;&nbsp;&nbsp;
                       	<!--  <input type="submit" value="조회">-->
                       	<button id="search" class="btn btn-success btn-circle">
