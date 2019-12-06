@@ -1,5 +1,6 @@
 package test.app.project.vo;
 
+
 /**
  * 객실정보 모델 클래스.
  * 
@@ -8,8 +9,9 @@ package test.app.project.vo;
  */
 public class RoomsVo{
 
+
 	/** 방식별번호. */
-	private int roomNum;
+	private int room_num;
 
 	/** 업소테이블. */
 	private int house_num;
@@ -18,46 +20,45 @@ public class RoomsVo{
 	private String roomname;
 
 	/** 객실가격. */
-	private int roomPrise;
+	private int room_price;
 
 	/** 객실정보. */
-	private String roomInfo;
+	private String room_info;
 
 	/** 룸체크인. */
-	private int roomCheck;
+	private int room_check;
 
 	/** 최대인원. */
-	private int maxPersonnel;
+	private int max_Personnel;
 
 
 	/**
 	 * 생성자.
 	 */
 	public RoomsVo() {
-
 	}
 
 
-	public RoomsVo(int roomNum, int house_num, String roomname, int roomPrise, String roomInfo, int roomCheck,
-			int maxPersonnel) {
+	public RoomsVo(int room_num, int house_num, String roomname, int room_price, String room_info, int room_check,
+			int max_Personnel) {
 		super();
-		this.roomNum = roomNum;
+		this.room_num = room_num;
 		this.house_num = house_num;
 		this.roomname = roomname;
-		this.roomPrise = roomPrise;
-		this.roomInfo = roomInfo;
-		this.roomCheck = roomCheck;
-		this.maxPersonnel = maxPersonnel;
+		this.room_price = room_price;
+		this.room_info = room_info;
+		this.room_check = room_check;
+		this.max_Personnel = max_Personnel;
 	}
 
 
-	public int getRoomNum() {
-		return roomNum;
+	public int getRoom_num() {
+		return room_num;
 	}
 
 
-	public void setRoomNum(int roomNum) {
-		this.roomNum = roomNum;
+	public void setRoom_num(int room_num) {
+		this.room_num = room_num;
 	}
 
 
@@ -81,43 +82,44 @@ public class RoomsVo{
 	}
 
 
-	public int getRoomPrise() {
-		return roomPrise;
+	public int getRoom_price() {
+		return room_price;
 	}
 
 
-	public void setRoomPrise(int roomPrise) {
-		this.roomPrise = roomPrise;
+	public void setRoom_price(int room_price) {
+		this.room_price = room_price;
 	}
 
 
-	public String getRoomInfo() {
-		return roomInfo;
+	public String getRoom_info() {
+		return room_info;
 	}
 
 
-	public void setRoomInfo(String roomInfo) {
-		this.roomInfo = roomInfo;
+	public void setRoom_info(String room_info) {
+		this.room_info = room_info;
 	}
 
 
-	public int getRoomCheck() {
-		return roomCheck;
+	public int getRoom_check() {
+		return room_check;
 	}
 
 
-	public void setRoomCheck(int roomCheck) {
-		this.roomCheck = roomCheck;
+	public void setRoom_check(int room_check) {
+		this.room_check = room_check;
 	}
 
 
-	public int getMaxPersonnel() {
-		return maxPersonnel;
+	public int getMax_Personnel() {
+		return max_Personnel;
 	}
 
 
-	public void setMaxPersonnel(int maxPersonnel) {
-		this.maxPersonnel = maxPersonnel;
+	public void setMax_Personnel(int max_Personnel) {
+		this.max_Personnel = max_Personnel;
 	}
+
 
 }

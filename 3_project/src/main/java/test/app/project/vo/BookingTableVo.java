@@ -1,5 +1,7 @@
 package test.app.project.vo;
 
+import java.sql.Date;
+
 /**
  * 예약테이블 모델 클래스.
  * 
@@ -10,16 +12,16 @@ public class BookingTableVo {
 
 
 	/** 예약번호. */
-	private int bookingNum;
+	private int booking_num;
 
 	/** 객실정보. */
-	private int rooms;
+	private int room_num;
 
 	/** 회원테이블. */
 	private String mid;
 
 	/** 결제금액. */
-	private int payMoney;
+	private int pay_Money;
 
 	/** 예약신청날짜. */
 	private java.sql.Date booksDate;
@@ -34,20 +36,20 @@ public class BookingTableVo {
 	private String bookStatus;
 
 
-
+	/**
+	 * 생성자.
+	 */
 	public BookingTableVo() {
-		
 	}
 
 
-
-	public BookingTableVo(int bookingNum, int rooms, String mid, int payMoney, java.sql.Date booksDate,
-			java.sql.Date startDate, java.sql.Date endDate, String bookStatus) {
+	public BookingTableVo(int booking_num, int room_num, String mid, int pay_Money, Date booksDate, Date startDate,
+			Date endDate, String bookStatus) {
 		super();
-		this.bookingNum = bookingNum;
-		this.rooms = rooms;
+		this.booking_num = booking_num;
+		this.room_num = room_num;
 		this.mid = mid;
-		this.payMoney = payMoney;
+		this.pay_Money = pay_Money;
 		this.booksDate = booksDate;
 		this.startDate = startDate;
 		this.endDate = endDate;
@@ -55,29 +57,24 @@ public class BookingTableVo {
 	}
 
 
-
-	public int getBookingNum() {
-		return bookingNum;
+	public int getBooking_num() {
+		return booking_num;
 	}
 
 
-
-	public void setBookingNum(int bookingNum) {
-		this.bookingNum = bookingNum;
+	public void setBooking_num(int booking_num) {
+		this.booking_num = booking_num;
 	}
 
 
-
-	public int getRooms() {
-		return rooms;
+	public int getRoom_num() {
+		return room_num;
 	}
 
 
-
-	public void setRooms(int rooms) {
-		this.rooms = rooms;
+	public void setRoom_num(int room_num) {
+		this.room_num = room_num;
 	}
-
 
 
 	public String getMid() {
@@ -85,23 +82,19 @@ public class BookingTableVo {
 	}
 
 
-
 	public void setMid(String mid) {
 		this.mid = mid;
 	}
 
 
-
-	public int getPayMoney() {
-		return payMoney;
+	public int getPay_Money() {
+		return pay_Money;
 	}
 
 
-
-	public void setPayMoney(int payMoney) {
-		this.payMoney = payMoney;
+	public void setPay_Money(int pay_Money) {
+		this.pay_Money = pay_Money;
 	}
-
 
 
 	public java.sql.Date getBooksDate() {
@@ -109,11 +102,9 @@ public class BookingTableVo {
 	}
 
 
-
 	public void setBooksDate(java.sql.Date booksDate) {
 		this.booksDate = booksDate;
 	}
-
 
 
 	public java.sql.Date getStartDate() {
@@ -121,11 +112,9 @@ public class BookingTableVo {
 	}
 
 
-
 	public void setStartDate(java.sql.Date startDate) {
 		this.startDate = startDate;
 	}
-
 
 
 	public java.sql.Date getEndDate() {
@@ -133,11 +122,9 @@ public class BookingTableVo {
 	}
 
 
-
 	public void setEndDate(java.sql.Date endDate) {
 		this.endDate = endDate;
 	}
-
 
 
 	public String getBookStatus() {
@@ -145,10 +132,8 @@ public class BookingTableVo {
 	}
 
 
-
 	public void setBookStatus(String bookStatus) {
 		this.bookStatus = bookStatus;
 	}
 
-	
 }

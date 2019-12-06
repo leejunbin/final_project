@@ -8,13 +8,13 @@
 		http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
+	
 	<!-- Enables the Spring MVC @Controller programming model -->
 	<annotation-driven />
 
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
-	
-	
+
 	<!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
 	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<beans:property name="prefix" value="/WEB-INF/views/" />
@@ -25,10 +25,7 @@
 	<!-- xml 파일을 여러개 정의할 수 있음 -->
 	<beans:bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
 		<beans:property name="definitions">
-			<beans:list>
-				<beans:value>/WEB-INF/tiles.xml</beans:value>
-				<beans:value>/WEB-INF/adminTiles.xml</beans:value>
-			</beans:list>
+			<beans:value>/WEB-INF/tiles.xml</beans:value>
 		</beans:property>
 	</beans:bean>
 	<!-- 타일즈뷰를 실행하는 뷰리절버 -->
@@ -39,12 +36,8 @@
 		<beans:property name="order" value="1"/>
 	</beans:bean>
 	
-	<!-- @Autowired 적용하기 위해 사용됨 -->
-	<context:annotation-config/>
-	
 	<context:component-scan base-package="test.app.project.controller" />
-	<context:component-scan base-package="test.app.project.controllerY" />
-	<context:component-scan base-package="test.app.project.daoY" />
-	<context:component-scan base-package="test.app.project.serviceY" />
+	
+	
 	
 </beans:beans>

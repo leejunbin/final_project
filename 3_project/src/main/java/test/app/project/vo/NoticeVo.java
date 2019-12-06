@@ -1,5 +1,6 @@
 package test.app.project.vo;
 
+import java.sql.Date;
 
 /**
  * 공지사항 테이블 모델 클래스.
@@ -8,6 +9,7 @@ package test.app.project.vo;
  * @version $Id$
  */
 public class NoticeVo {
+
 
 	/** 공지사항번호. */
 	private int nnum;
@@ -19,7 +21,7 @@ public class NoticeVo {
 	private String ncontent;
 
 	/** 공지날짜. */
-	private java.sql.Date nregdate;
+	private Date nregdate;
 
 	/**
 	 * 생성자.
@@ -27,7 +29,7 @@ public class NoticeVo {
 	public NoticeVo() {
 	}
 
-	public NoticeVo(int nnum, String ntitle, String ncontent, java.sql.Date nregdate) {
+	public NoticeVo(int nnum, String ntitle, String ncontent, Date nregdate) {
 		super();
 		this.nnum = nnum;
 		this.ntitle = ntitle;
@@ -59,11 +61,11 @@ public class NoticeVo {
 		this.ncontent = ncontent;
 	}
 
-	public java.sql.Date getNregdate() {
+	public Date getNregdate() {
 		return nregdate;
 	}
 
-	public void setNregdate(java.sql.Date nregdate) {
+	public void setNregdate(Date nregdate) {
 		this.nregdate = nregdate;
 	}
 
