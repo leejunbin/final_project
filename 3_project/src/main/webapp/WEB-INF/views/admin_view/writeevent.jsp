@@ -32,7 +32,7 @@
         <div class="row" style="height: 800px">
           <div class="col-lg-7" style="margin-left: 100px; margin-top: 20px;" >     
               <div class="text-center">
-                <h1 class="h4 text-gray-900 mb-4" style="text-align: left;">이벤트 작성</h1>
+                <h1 class="h4 text-gray-900 mb-4" style="text-align: left;">공지사항 작성</h1>
               </div>
               <div class="user" style="width: 900px; height: 700px;">
               <form method="GET" action="${cp}/admin_view/writenoticeok">
@@ -44,9 +44,6 @@
                 <textarea id="ncontent" name ="ncontent" placeholder="내용" style="width: 800px; height: 500px;"></textarea>                                    
                 <hr>
                 <input type="submit" class="btn btn-primary btn-icon-split" style="float:right" value="작성하기">
-                <a href="${cp}/admin_view/noticeboard" class="btn btn-secondary btn-icon-split">                
-                	 <span>뒤로가기</span>
-                  </a>
                	</form>
                   </div>
               <hr>
